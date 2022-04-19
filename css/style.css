@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: "FreightSansProMedium", sans-serif;
+    font-family: "danjeong", sans-serif;
+    font-weight: 300;
 }
 
 
@@ -73,9 +74,10 @@ ul li a:after {
     bottom: 5px;
     left: 0;
     width: 0;
-    height:40px;
+    height: 40px;
     background: rgb(196, 237, 253, 0.2);
 }
+
 
 /* container */
 
@@ -95,68 +97,167 @@ ul li a:after {
     margin: 8vw auto;
     position: relative;
     padding: 10vw 0;
-    background-color: rgb(255, 235, 205,.5);
 }
 
 
-.portfolio{
-	display: flex;
+/* section1 */
+
+.section#section1 {
+    background: url(../images/main_background.png) no-repeat center center;
 }
+
+.portfolio {
+    display: flex;
+}
+
 
 /* project1 */
-.portfolio.project1{
-	padding: 0;
-	min-height: 100vh;
-}
-.left{
-	position: absolute;
-}
-.mockup{
-	width: 600px;
-	height: 450px;
-	position: relative;
-	top: 260px;
-}
-.mockup .computer{
-	position: absolute;
-	width: 100%;
-}
-.mockup a.hidden{
-	display: block;
-	width: 452px;
-	height: 254px;
-	position: absolute;
-	overflow: hidden;
-	top: 25px;
-	left: 127px;
-}
-.hidden img{
-	position: relative;
-	width: 100%;
+
+.portfolio.project1 {
+    padding: 0;
+    padding-top: 100px;
+    min-height: 100vh;
 }
 
+.left {
+    position: absolute;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    width: 50%;
+    left: 0;
+}
+
+.left.in {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    width: 40%;
+}
+
+.mockup {
+    width: 600px;
+    height: 450px;
+    position: relative;
+    top: 260px;
+}
+
+.mockup .computer {
+    position: absolute;
+    width: 100%;
+}
+
+.mockup a.hidden {
+    display: block;
+    width: 452px;
+    height: 254px;
+    position: absolute;
+    overflow: hidden;
+    top: 25px;
+    left: 127px;
+}
+
+.hidden img {
+    position: relative;
+    width: 100%;
+}
+
+
 /* 프젝1 폰 */
-.mockup2{
-	width: 100px;
-	height: 70px;
-	position: relative;
-	top: -80px;
-	left: 440px;
+
+.mockup2 {
+    width: 100px;
+    height: 70px;
+    position: relative;
+    top: -80px;
+    left: 440px;
 }
-.mockup2 .phone{
-	position: absolute;
-	width: 170px;
+
+.mockup2 .phone {
+    position: absolute;
+    width: 170px;
 }
-.mockup2 a.hidden{
-	display: block;
-	width: 150px;
-	height: 224px;
-	position: absolute;
-	overflow: hidden;
-	top: 56px;
-	left: 11px;
+
+.mockup2 a.hidden {
+    display: block;
+    width: 150px;
+    height: 224px;
+    position: absolute;
+    overflow: hidden;
+    top: 56px;
+    left: 11px;
 }
-.hidden img{
-	position: relative;
-	width: 100%;
+
+
+/* 스크롤 시 애니메이션 */
+
+.project_info {
+    position: relative;
+}
+
+.project_info>* {
+    display: block;
+    font-size: 3vw;
+}
+
+.title {
+    opacity: 0;
+    transform: translateY(200px) scaleY(0);
+    transform-origin: 0 0;
+    transition: all 2s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+.laguage {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 4s 1.4s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+.spec {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 4s 1.8s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+.epilog {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 4s 2.2s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+.title.show {
+    opacity: 1;
+    transform: translateY(0px) scaleY(1);
+}
+
+.laguage.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.spec.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.epilog.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+/* 스크롤바 */
+
+body::-webkit-scrollbar {
+    width: 1em;
+    background-color: #d4d4d4;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ff00ff;
+    border-radius: 50% 0 0 50%;
 }
