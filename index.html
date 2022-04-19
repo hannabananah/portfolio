@@ -23,78 +23,323 @@
     <meta name="twitter:title" content="매일 더 성장하는 퍼블리셔 강한나의 포트폴리오입니다.">
     <meta name="twitter:description" content="디자인에 자신있고 코딩에 강한 나입니다. 끈기와 열정으로 무장한 신입 퍼블리셔 강한나의 포트폴리오입니다.">
     <!-- <meta name="twitter:image" content="..."> -->
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font/font.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="shortcut icon" href="images/favicon.ico/apple-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
 
 </head>
 
 <body>
-    <div id="wrap">
+    <div id="wrapper">
         <header id="header" class="section">
-            <nav>
-                <ul class="gnb">
-                    <li>
-                        <a href="#section1">home</a>
-                    </li>
-                    <li>
-                        <a href="#section2">about me</a>
-                    </li>
-                    <li>
-                        <a href="#section3">project1</a>
-                    </li>
-                    <li>
-                        <a href="#section4">project2</a>
-                    </li>
-                    <li>
-                        <a href="#section5">project3</a>
-                    </li>
-                    <li><a href="#section6">banner</a></li>
-                    <li><a href="#section7">contact me</a></li>
-                </ul>
-            </nav>
+            <div class="fixed_header">
+                <div class="container">
+                    <nav class="nav cf">
+                        <h1 class="fl"><a href="index.html">한나의 포트폴리오</a></h1>
+                        <ul class="gnb font_gnb fr">
+                            <li>
+                                <a href="#home">home</a>
+                            </li>
+                            <li>
+                                <a href="#aboutme">about me</a>
+                            </li>
+                            <li>
+                                <a href="#project1">project1</a>
+                            </li>
+                            <li>
+                                <a href="#project2">project2</a>
+                            </li>
+                            <li>
+                                <a href="#project3">project3</a>
+                            </li>
+                            <li>
+                                <a href="#banner">banner</a>
+                            </li>
+                            <li>
+                                <a href="#contactme">contact me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
-        <div class="container">
-            <div class="section" id="section1">
-            </div>
-            <div class="section" id="section2">about me</div>
-            <div class="section portfolio project1" id="section3">
-                <h2>project1</h2>
-                <div class="left">
-                    <div class="mockup">
-                        <img src="images/Computer.png" alt="데스크탑 목업 이미지" class="computer">
-                        <a href="http://ssenna3.dothome.co.kr/project/project1/Uljin/" class="hidden">
-                            <img src="images/Uljin.jpeg" alt="울진군문화관광프로젝트PC화면">
-                        </a>
-                        <div class="computer"></div>
-                    </div>
-                    <div class="mockup2">
-                        <img src="images/iphone.png" alt="핸드폰 목업 이미지" class="phone">
-                        <a href="#" class="hidden">
-                            <img src="images//UljinAdaptivepng.png" alt="울진군문화관광프로젝트PHONE화면"></a>
-                        <div class="phone"></div>
-                    </div>
+        <main id="main">
+            <div class="main_banner">
+                <div class="inner">
+                    <div class="slogan_area">
+                        <p class="font_slogan1 capital fadein">
+                            i'm STRONG.
+                        </p>
+                        <p class="font_slogan2">
+                            코딩과 웹디자인계를 정복하러 온 암스트롱,<strong class="effect">
+                                    <span id="title1">강</span>
+                                    <span id="title2">한</span>
+                                    <span id="title3">나</span>
+                            </strong>입니다.
+                        </p>
+                        
+<!--                         <div class="detail_link cf">
+                            <a href="#이력서링크넣어야돼" class="button roboto_R fl">이력서 보기</a>
+                            <a href="https://github.com/hannabananah" class="button roboto_R fl">git 바로가기</a>
+                        </div>
+ -->                    </div>
                 </div>
-                <div class="right">
-                    <div class="project_info">
-                        <span class="title">project1:울진군 문화관광</span>
-                        <span class="language">language</span>
-                        <span class="spec">spec</span>
-                        <span class="epilog">epilog</span>
-                    </div>
+                <div class="profile">
+                    <img src="images/sampleprofile.png" alt="메인프로필 사진">
                 </div>
             </div>
-            <div class="section" id="section4">project2</div>
-            <div class="section" id="section5">project3</div>
-            <div class="section" id="section6">banner</div>
-            <div class="section" id="section7">contact me</div>
-        </div>
-        <footer id="footer"></footer>
+            <section id="aboutme" class="section">
+                <div class="container cf">
+                    <h2 class="font_aboutme">about me</h2>
+                    <div class="profile_area fl">
+                        <div class="profile_img"><img src="images/profile2.png" alt="이력서프로필 사진"></div>
+                    </div>
+                    <div class="profile_detail_area cf">
+                        <div class="detail_box fl">
+                            <p><span>name_</span>강한나</p>
+                            <p><span>birth_</span>1996.03.25</p>
+                            <p><span>address_</span>경기도 부천시</p>
+                            <p><span>mobile_</span>010.9355.0175</p>
+                            <p><span>email_</span>ssenna3@naver.com</p>
+                            <p><span>github_</span>hannabananah</p>
+                        </div>
+                        <div class="detail_box detail_box_right fr">
+                            <p><span>license</span><br>2016.09 자동차운전면허증 1종보통<br>2021.04 PTE영어공인시험 +70</p>
+                            <p><span>education</span><br>2015.03~2021.06 서울여자대학교 경제&amp;기업보안전공<br>2018.04~20121.02 호주 어학연수
+                            </p>
+                            <p><span>history</span>그린 컴퓨터 아카데미 (디지털디자인) UI/UX<br>반응형 웹디자인&웹퍼블리셔(디자인&코딩)양성과정 760시간 수료</p>
+                        </div>
+                        <div id="skills" class="section">
+                            <h2 class="font_skills">skills</h2>
+                            <div class="skill_area cf">
+                                <div class="skill1 ">
+                                    <div class="fl"><img src="images/ps.png" alt="ps아이콘"></div>
+                                    <div class="fl"><img src="images/ai.png" alt="ai아이콘"></div>
+                                    <div class="fl"><img src="images/xd.png" alt="xd아이콘"></div>
+                                    <p class="fr">사진 보정 및 로고, 배너, 아이콘 등의 디자인 작업을 할 수 있습니다.<br>XD를 활용하여 웹 사이트의 시안과 프로토타입
+                                        제작이 가능합니다.</p>
+                                </div>
+                                <div class="skill2">
+                                    <div class="fl"><img src="images/css.png" alt="css아이콘"></div>
+                                    <div class="fl"><img src="images/html.png" alt="html아이콘"></div>
+                                    <p class="fr">콘텐츠 내용에 알맞는 시맨틱 태그를 사용하여 코드를 작성합니다.<br>웹 표준 및 웹 접근성을 준수하여 반응형 레이아웃을
+                                        제작할 수 있습니다.</p>
+                                </div>
+                                <div class="skill3">
+                                    <div class="fl"><img src="images/js.png" alt="js아이콘"></div>
+                                    <div class="fl"><img src="images/jq.png" alt="jq아이콘"></div>
+                                    <p class="fr">자바스크립트 ES6문법을 이해하고 활용할 수 있습니다.<br>제이쿼리를 활용하여 다양한 애니메이션과 기능을 구현할 수
+                                        있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <div id="projectbox">
+                <section id="project1" class="section">
+                    <div class="container">
+                        <div class="left">
+                            <div class="left_box">
+                                <h2 class="font_projecthead capital">project1</h2>
+                                <a href="https://hannabananah.github.io/Project1/" class="font_projectview upper"
+                                    target="_blank">view project&mdash;</a>
+                                <div>적응형</div>
+                                <a href="https://hannabananah.github.io/Project1/" target="_blank"></a>
+                                <ul class="project_detail">
+                                    <li>
+                                        <p>
+                                        </p>
+                                    </li>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="right_box">
+                                <h3 class="site_name bold">울진군 문화관광</h3>
+                                <div class="mockup">
+                                    <img src="images/pc_mockup.png" alt="데스크탑목업이미지" class="computer">
+                                    <a href="https://hannabananah.github.io/Project1/" target="_blank"><img
+                                            src="#" alt="project1 울진군 문화관광 적응형 PC버전"></a>
+                                    <div class="mockup_m">
+                                        <a href="https://hannabananah.github.io/Project1/" target="_blank"><img
+                                                src="images/phone_mockup.png" alt="모바일목업이미지" class="mobile"></a>
+                                        <a href="https://hannabananah.github.io/Project1/" class="hidden_m"
+                                            target="_blank"><img src="#"
+                                                alt="project1 울진군 문화관광 적응형 모바일버전" class="m_img"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="project2" class="section">
+                    <div class="container">
+                        <div class="left">
+                            <div class="left_box">
+                                <h2 class="font_projecthead capital">project2</h2>
+                                <a href="https://hannabananah.github.io/Project3/" class="font_projectview upper"
+                                    target="_blank">view project&mdash;</a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="right_box">
+                                <h3 class="font_projecthead">Del Monte</h3>
+                                <div class="mockup">
+                                    <img src="images/pc_mockup.png" alt="데스크탑목업이미지" class="computer">
+                                    <a href="https://hannabananah.github.io/Project3/" target="_blank"><img
+                                            src="images/prj3_pc.jpg" alt="project3 델몬트 반응형 PC"></a>
+                                    <div class="mockup_m">
+                                        <a href="https://hannabananah.github.io/Project3/" target="_blank"><img
+                                                src="images/phone_mockup.png" alt="모바일목업이미지" class="mobile"></a>
+                                        <a href="https://hannabananah.github.io/Project3/" class="hidden_m"
+                                            target="_blank"><img src="images/prj3_mobile.jpg" alt="project3 델몬트 반응형 모바일"
+                                                class="m_img"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="project3" class="section">
+                    <div class="container">
+                        <div class="left">
+                            <div class="left_box">
+                                <h2 class="font_projecthead capital">project3
+                                    <a href="#" class="font_projectview upper" target="_blank">view project&mdash;</a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="right_box">
+                                <h3 class="font_projecthead">project3</h3>
+                                <div class="mockup">
+                                    <img src="images/pc_mockup.png" alt="데스크탑목업이미지" class="computer">
+                                    <a href="#" target="_blank"><img src="#" alt="#"></a>
+                                    <div class="mockup_tab">
+                                        <img src="images/tablet_mockup.png" alt="태블릿목업 이미지" class="tablet">
+                                        <a href="#" target="_blank" class="hidden_tab"><img src="#" alt=""></a>
+                                    </div>
+                                    <div class="mockup_m">
+                                        <a href="#" target="_blank"><img src="images/phone_mockup.png" alt="모바일목업이미지"
+                                                class="mobile"></a>
+                                        <a href="#" class="hidden_m" target="_blank"><img src="#" alt="#"
+                                                class="m_img"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section id="banner" class="section">
+                <div class="container">
+                    <h2 class="font_banner upper">banners</h2>
+                    <div class="banner_area">
+                        <div class="banner_list">
+                            <div class="banner_box1">
+                                <img src="#" alt="배너1 이미지">
+                                <div class="banner_txt">>></div>
+                            </div>
+                        </div>
+                        <div class="banner_list">
+                            <div class="banner_box2">
+                                <img src="#" alt="배너2 이미지">
+                                <div class="banner_txt">>></div>
+                            </div>
+                        </div>
+                        <div class="banner_list">
+                            <div class="banner_box3">
+                                <img src="#" alt="배너3 이미지">
+                                <div class="banner_txt">>></div>
+                            </div>
+                        </div>
+                        <div class="banner_list">
+                            <div class="banner_box4">
+                                <img src="#" alt="배너4 이미지">
+                                <div class="banner_txt">>></div>
+                            </div>
+                        </div>
+                        <div class="banner_list">
+                            <div class="banner_box5">
+                                <img src="#" alt="배너5 이미지">
+                                <div class="banner_txt">>></div>
+                            </div>
+                        </div>
+                        <div class="banner_list">
+                            <div class="banner_box6">
+                                <img src="#" alt="배너6 이미지">
+                                <div class="banner_txt">>></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contactme" class="section">
+                <div class="container">
+                    <div class="contact_box">
+                        <div>
+                            <h2 class="font_contactme">contact me</h2>
+                        </div>
+                    </div>
+                    <ul class="address">
+                        <li>
+                            <a href="tel:+821093550175"><span class="material-icons">
+                                    phone_iphone
+                                </span>010-9355-0175
+                            </a>
+                        </li>
+                        <li>
+                            <button>
+                                <span class="material-icons">
+                                    email
+                                </span></button>
+                            <strong>ssenna3@naver.com</strong>
+                            <input id="clipTarget" type="text" value="" style="position:absolute;top:-9999em;">
+                        </li>
+                    </ul>
+                    <div class="contact_btns">
+                        <a href="#" class="button">이력서 보기</a>
+                        <a href="#" class="button" target="_blank">git 바로가기</a>
+                    </div>
+                    <p class="copyright roboto_L">Copyright&copy;2022. Hannah Kang. All rights reserved.</p>
+                </div>
+    </div>
+    </section>
+    </main>
+    <footer id="footer"></footer>
     </div>
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/script.js"></script>
+    <script src="js/logo.js"></script>
 </body>
 
 </html>

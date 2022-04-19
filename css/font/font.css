@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'danjunghae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto-Thin.ttf') format('ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "tiempos";
+    src: url("tiempos.woff2") format("woff2"), /* chrome、firefox */
+    url("tiempos.woff") format("woff"), /* chrome、firefox */
+    url("tiempos.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("tiempos.svg#Tiempo") format("svg"); /* iOS 4.1- */
+  }
+
+  /* font */
+.font_gnb > li a {
+    font-family: "roboto", "맑은고딕", sans-serif;
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 15px;
+    letter-spacing: 0;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .font_slogan1 {
+    font-family: "tiempos", "맑은고딕", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0;
+    color: #fff;
+  }
+  .font_slogan2 {
+    font-family: "danjunghae", "맑은고딕", sans-serif;
+    font-size: 33px;
+    line-height: 39.6px;
+    letter-spacing: 0;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .font_aboutme {
+    font-family: "roboto", "맑은고딕", sans-serif;
+    font-weight: 500;
+    font-size: 250px;
+    line-height: 300px;
+    letter-spacing: -25%;
+    color: #f2f0ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .detail_box span{
+    font-family: "tiempos", "맑은고딕", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: 0;
+    color: #582faa;
+    text-transform: capitalize;
+  }
+  .detail_box span:nth-child(6){
+    text-transform: none;
+  }
+  .detail_box>p{
+    font-family: "danjunghae", "맑은고딕", sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 25%;
+    color: #060606;
+  }
+  .font_skills {
+    font-family: "roboto", "맑은고딕", sans-serif;
+    font-weight: 500;
+    font-size: 470px;
+    line-height: 564px;
+    letter-spacing: -25%;
+    color: #f2f0ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #skills .skill_area p {
+    font-family: "danjunghae", "맑은고딕", sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 25%;
+    color: #060606;
+  }
+  .font_project {
+    font-family: "roboto", "맑은고딕", sans-serif;
+    font-weight: 500;
+    font-size: 350px;
+    line-height: 420px;
+    letter-spacing: -25%;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .font_projecthead {
+    font-family: "tiempos", "맑은고딕", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 25%;
+    color: #060606;
+  }
+  .font_projectdetail {
+    font-family: "roboto", "맑은고딕", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 25%;
+    color: #333;
+  }
+  .font_projectview {
+    font-family: "roboto", "맑은고딕", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13.2px;
+    letter-spacing: 105%;
+    color: #5524c4;
+  }
+  .font_banner {
+    font-family: "roboto", "맑은고딕", sans-serif;
+    font-weight: 500;
+    font-size: 302px;
+    line-height: 362.4px;
+    letter-spacing: -25%;
+    color: #f2f0ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .font_contactme {
+    font-family: "tiempos", "맑은고딕", sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 54px;
+    letter-spacing: -25%;
+    color: #fff;
+  }

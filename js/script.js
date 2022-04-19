@@ -16,7 +16,6 @@ $(window).on("scroll", function() {
     let scrollTop = $(window).scrollTop()
     sections.each(function(i, o) {
         if (scrollTop >= sections.eq(i).offset().top - speed) {
-            console.log(sections.eq(i).offset().top - speed)
             $("nav ul.gnb li").eq(i).addClass("active").siblings().removeClass("active")
         } else if (scrollTop >= sections.eq(2).offset().top - speed) {
             sections.eq(2).find(".left").addClass("in");
@@ -39,3 +38,22 @@ $(".hidden").hover(
         img.stop().animate({ top: 0 }, 5000);
     }
 )
+
+// 이메일 복사
+function email () {
+    var $emailBtn=$("#contactme .address button");
+
+    $emailBtn.on("click", function  (e) {
+        var text = $("#contactme .address strong").text();
+        $("#clipTarget").val(text);
+        $("#clipTarget").select();
+
+        try { 
+            var successful = document.execCommand('copy'); 
+            alert("복사완료")
+        } catch (err) {
+            alert("이 브라우저는 지원하지 않습니다.")
+        }
+    });
+}
+email();

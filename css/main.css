@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+/* main */
+
+#main .main_banner {
+  background: url(../images/main_background.png) no-repeat top;
+  background-size: contain;
+  margin-top: -3rem;
+  height: 1001px;
+}
+/* slogan */
+
+#main .main_banner .slogan_area {
+  position: absolute;
+  top: 23%;
+  width: 100%;
+  text-align: center;
+  cursor: context-menu;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#main .main_banner .fadein {
+  animation: fadein 3.5s ease-out alternate both;
+  animation-delay: 1s;
+}
+
+#main .main_banner .effect {
+  font-size: 3vw;
+  line-height: 10vh;
+}
+
+#main #title1:hover {
+  color: white;
+  text-shadow: 0 0 30px blue;
+}
+
+#main #title2:hover {
+  color: white;
+  text-shadow: 0 0 30px red;
+}
+
+#main #title3:hover {
+  color: white;
+  text-shadow: 0 0 30px orange;
+}
+
+/* main detail btn */
+
+/*  */
+#main .main_banner .slogan_area .detail_link {
+  position: absolute;
+  top: 220px;
+  left: 0;
+  display: flex;
+  margin-left: 5rem;
+}
+
+#main .profile img {
+  position: absolute;
+  top: 40%;
+  left: 41%;
+  width: 320px;
+}
+
+/* aboutme */
+
+/* Project&banner */
+
+#project1.section,
+#project2.section,
+#project3.section,
+#banner.section {
+  width: 1000px;
+  max-width: 70vw;
+  margin: 8vw auto;
+  position: relative;
+  padding: 10vw 0;
+}
+
+/* project1 */
+
+.portfolio.project1 {
+  padding: 0;
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.left {
+  position: absolute;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  width: 50%;
+  left: 0;
+}
+
+.left.in {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  width: 40%;
+}
+
+.mockup {
+  width: 600px;
+  height: 450px;
+  position: relative;
+  top: 260px;
+}
+
+.mockup .computer {
+  position: absolute;
+  width: 100%;
+}
+
+.mockup a.hidden {
+  display: block;
+  width: 452px;
+  height: 254px;
+  position: absolute;
+  overflow: hidden;
+  top: 25px;
+  left: 127px;
+}
+
+.hidden img {
+  position: relative;
+  width: 100%;
+}
+
+/* 프젝1 폰 */
+
+.mockup2 {
+  width: 100px;
+  height: 70px;
+  position: relative;
+  top: -80px;
+  left: 440px;
+}
+
+.mockup2 .phone {
+  position: absolute;
+  width: 170px;
+}
+
+.mockup2 a.hidden {
+  display: block;
+  width: 150px;
+  height: 224px;
+  position: absolute;
+  overflow: hidden;
+  top: 56px;
+  left: 11px;
+}
+
+/* 스크롤 시 애니메이션 */
+
+.project_info {
+  position: relative;
+}
+
+.project_info > * {
+  display: block;
+  font-size: 3vw;
+}
+
+.title {
+  opacity: 0;
+  transform: translateY(200px) scaleY(0);
+  transform-origin: 0 0;
+  transition: all 2s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+.laguage {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 4s 1.4s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+.spec {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 4s 1.8s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+.epilog {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 4s 2.2s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+.title.show {
+  opacity: 1;
+  transform: translateY(0px) scaleY(1);
+}
+
+.laguage.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.spec.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.epilog.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* 스크롤바 */
+
+body::-webkit-scrollbar {
+  width: 1em;
+  background-color: #d4d4d4;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff00ff;
+  border-radius: 50% 0 0 50%;
+}
