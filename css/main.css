@@ -5,7 +5,7 @@
 #main .main_banner {
   background: url(../images/main_background.png) no-repeat top;
   background-size: contain;
-  margin-top: -3rem;
+  margin-top: -3.3rem;
   height: 1001px;
 }
 /* slogan */
@@ -18,13 +18,13 @@
   cursor: context-menu;
 }
 
-@keyframes fadein{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #main .main_banner .fadein {
@@ -71,18 +71,106 @@
 }
 
 /* aboutme */
+#aboutme.section {
+  height: 100vh;
+  padding: 9rem 0 2rem;
+}
+#aboutme h2 {
+  background: url(../images/aboutme.png) no-repeat center center;
+  background-size: contain;
+  width: 1300px;
+  height: 432px;
+  position: absolute;
+  z-index: -1;
+}
+#aboutme .profile_area {
+  width: 100%;
+  height: 43.5vh;
+  margin-bottom: 13vh;
+}
+#aboutme .profile_img {
+  width: 280px;
+}
+#aboutme .profile_detail_area {
+  width: 900px;
+  height: inherit;
+  margin: 0 25px 0 65px;
+}
+#aboutme .detail_box_left > p {
+  margin-bottom: 32px;
+}
+#aboutme .detail_box_right > p {
+  margin-bottom: 23px;
+}
 
+/* skills */
+#aboutme .skill_area {
+  width: 100%;
+  height: 35vh;
+  margin-top: 180px;
+}
+#aboutme .skill_area h2 {
+  background: url(../images/skills.png) no-repeat center center;
+  background-size: contain;
+  width: 70%;
+  height: 257px;
+  position: absolute;
+  z-index: -1;
+  background-position-x: 408px;
+  background-position-y: 32px;
+}
+#aboutme .skill_area .skill {
+  margin-bottom: 70px;
+}
+#aboutme .skill_img {
+  display: inline-block;
+  width: 280px;
+  height: 55px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+#aboutme .skill_img > div {
+  width: 20%;
+  margin: 0 6px;
+}
+#aboutme .skill1 .skill_img {
+  margin-left: 65px;
+}
+#aboutme .skill2 .skill_img {
+  margin-left: 80px;
+}
+#aboutme .skill2 .skill_img > div {
+  margin: 0 15px;
+}
+#aboutme .skill3 .skill_img {
+  margin-left: 60px;
+}
+#aboutme .skill3 .skill_img > div {
+  margin: 0 20px;
+}
+#aboutme .skill3 .skill_img > div:last-child {
+  padding-top: 15px;
+  width: 40%;
+}
+#aboutme .skill_area .skill > p {
+  padding-right: 17%;
+}
 /* Project&banner */
 
 #project1.section,
 #project2.section,
 #project3.section,
 #banner.section {
-  width: 1000px;
-  max-width: 70vw;
+  height: 80vh;
   margin: 8vw auto;
-  position: relative;
-  padding: 10vw 0;
+  padding: 10rem 0 0;
+}
+#project1 .container,
+#project2 .container,
+#project3 .container,
+#banner .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* project1 */
@@ -114,10 +202,12 @@
 }
 
 .mockup {
+  display: inline-block;
   width: 600px;
   height: 450px;
   position: relative;
-  top: 260px;
+  top: 0;
+  left: 200px;
 }
 
 .mockup .computer {
@@ -143,11 +233,12 @@
 /* 프젝1 폰 */
 
 .mockup2 {
-  width: 100px;
-  height: 70px;
+  display: inline-block;
+  width: 180px;
+  height: 400px;
   position: relative;
-  top: -80px;
-  left: 440px;
+  top: 65px;
+  left: 125px;
 }
 
 .mockup2 .phone {
@@ -221,14 +312,10 @@
   transform: translateY(0px);
 }
 
-/* 스크롤바 */
-
-body::-webkit-scrollbar {
-  width: 1em;
-  background-color: #d4d4d4;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #ff00ff;
-  border-radius: 50% 0 0 50%;
+/* contactme */
+#contactme {
+  background: url(../images/contactme.png) top;
+  background-size: cover;
+  height: 60vh;
+  padding: 9.5rem 0 0;
 }

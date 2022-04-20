@@ -8,7 +8,7 @@ topmenu.click(function(e) {
     let index = target.index()
     let section = $(".section").eq(index)
     let offset = section.offset().top
-    $("html,body").animate({ scrollTop: offset }, 1000, "easeOutCirc")
+    $("html,body").animate({ scrollTop: offset }, 900, "easeOutCirc")
 })
 
 //스크롤이벤트
