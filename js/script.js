@@ -19,6 +19,7 @@ $(window).on("scroll", function () {
 			$("nav ul.gnb li").eq(i).addClass("active").siblings().removeClass("active")
 		} else if (scrollTop >= sections.eq(2).offset().top - speed) {
 			sections.eq(2).find(".left").addClass("in");
+			sections.eq(2).find(".right").addClass("in");
 			sections.eq(2).find("span").addClass("show");
 		}
 	})
@@ -36,6 +37,14 @@ $(window).on("scroll", function () {
 		} else if (scrollTop >= sections.eq(4).offset().top - speed) {
 			sections.eq(4).find(".project3_left").addClass("in");
 			sections.eq(4).find("span").addClass("show");
+		}
+	})
+    sections.each(function (i, o) {
+		if (scrollTop >= sections.eq(i).offset().top - speed) {
+			$("nav ul.gnb li").eq(i).addClass("active").siblings().removeClass("active")
+		} else if (scrollTop >= sections.eq(5).offset().top - speed) {
+			sections.eq(5).find(".right").addClass("in");
+			sections.eq(5).find("span").addClass("show");
 		}
 	})
 })

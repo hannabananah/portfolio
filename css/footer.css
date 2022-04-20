@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+#footer {
+  height: 10vh;
+  padding: 2rem 0 0;
+  background-color: #272727;
+}
+#footer .copyright{
+  color: #fff;
+  text-align: center;
+  font-family: 'roboto', sans-serif;
+}

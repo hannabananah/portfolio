@@ -12,10 +12,10 @@
 
 #main .main_banner .slogan_area {
   position: absolute;
-  top: 23%;
-  width: 100%;
-  text-align: center;
-  cursor: context-menu;
+  top: 190px;
+  width: 45%;
+  left: 27%;
+  cursor: default;
 }
 
 @keyframes fadein {
@@ -28,13 +28,12 @@
 }
 
 #main .main_banner .fadein {
-  animation: fadein 3.5s ease-out alternate both;
-  animation-delay: 1s;
+  animation: fadein 2.5s ease-out alternate both;
+  animation-delay: 0.5s;
 }
 
 #main .main_banner .effect {
-  font-size: 3vw;
-  line-height: 10vh;
+  font-size: 55px;
 }
 
 #main #title1:hover {
@@ -53,8 +52,6 @@
 }
 
 /* main detail btn */
-
-/*  */
 #main .main_banner .slogan_area .detail_link {
   position: absolute;
   top: 220px;
@@ -63,61 +60,56 @@
   margin-left: 5rem;
 }
 
-#main .profile img {
+#main .profile {
   position: absolute;
-  top: 40%;
-  left: 41%;
+  top: 354px;
+  left: 42%;
   width: 320px;
 }
 
 /* aboutme */
 #aboutme.section {
-  height: 100vh;
-  padding: 9rem 0 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 9rem 0 0;
 }
 #aboutme h2 {
   background: url(../images/aboutme.png) no-repeat center center;
   background-size: contain;
-  width: 1300px;
+  width: 1400px;
   height: 432px;
   position: absolute;
   z-index: -1;
 }
 #aboutme .profile_area {
   width: 100%;
-  height: 43.5vh;
-  margin-bottom: 13vh;
+  height: 27rem;
+  margin-bottom: 14rem;
 }
 #aboutme .profile_img {
-  width: 280px;
+  width: 21.4%;
 }
 #aboutme .profile_detail_area {
-  width: 900px;
+  width: 74%;
   height: inherit;
-  margin: 0 25px 0 65px;
+  margin: 0px 0 0 64px;
 }
-#aboutme .detail_box_left > p {
-  margin-bottom: 32px;
-}
-#aboutme .detail_box_right > p {
-  margin-bottom: 23px;
+#aboutme .profile_detail_area p{
+  padding-bottom: 2.6rem;
 }
 
 /* skills */
 #aboutme .skill_area {
   width: 100%;
-  height: 35vh;
-  margin-top: 180px;
+  height: 27rem;
 }
 #aboutme .skill_area h2 {
   background: url(../images/skills.png) no-repeat center center;
   background-size: contain;
-  width: 70%;
-  height: 257px;
+  width: 1400px;
+  height: 325px;
   position: absolute;
   z-index: -1;
-  background-position-x: 408px;
-  background-position-y: 32px;
 }
 #aboutme .skill_area .skill {
   margin-bottom: 70px;
@@ -155,59 +147,103 @@
 #aboutme .skill_area .skill > p {
   padding-right: 17%;
 }
-/* Project&banner */
+/* Project */
+#project {
+  background-color: #f4f7fa;
+  margin: 7rem auto 0;
+  padding: 7rem 0;
+}
+#project .hidden img {
+  position: relative;
+  width: 100%;
+}
 
 #project1.section,
 #project2.section,
 #project3.section,
-#banner.section {
+#project4.section {
   height: 80vh;
-  margin: 8vw auto;
-  padding: 10rem 0 0;
+  padding: 5rem 0;
 }
 #project1 .container,
 #project2 .container,
 #project3 .container,
+#project4 .container,
 #banner .container {
   display: flex;
   justify-content: space-between;
 }
-
+#project h2 {
+  background: url(../images/project.png) no-repeat center center;
+  background-size: contain;
+  width: 1400px;
+  position: absolute;
+  z-index: 0;
+  height: 425px;
+}
+#project .left_area1{
+  position: relative;
+  width: 60%;
+  padding-right: 132px;
+}
+#project .right_area1{
+  width: 40%;
+  position: relative;
+  padding-top: 170px;
+}
+#project .left_area2{
+  width: 40%;
+  position: relative;
+  padding-top: 170px;
+}
+#project .right_area2{
+  position: relative;
+  width: 60%;
+}
 /* project&banner title effect */
-#main .project {
+#project .project {
+  font-family: Sans-serif;
+  display: flex;
+  justify-content: left;
+  font-size: 48px;
+  height: 63px;
+}
+#banner .project{
   font-family: Sans-serif;
   text-align: center;
   display: flex;
   justify-content: center;
   font-size: 48px;
   height: 63px;
+  position: relative;
+  bottom: 6rem;
 }
-#main .project span {
+#project .project span, #banner .project span{
   position: relative;
 }
-#main .project span>div {
+#project .project span > div, #banner .project span > div {
   height: 100%;
   overflow: hidden;
   text-overflow: clip;
   white-space: nowrap;
 }
 
-#main .project span>div:after {
+#project .project span > div:after, #banner .project span > div:after {
   content: "";
-  height: 40px;
+  height: 50px;
   width: 0;
   left: 0;
   position: absolute;
   background: black;
   top: 0;
 }
-#main .project.onStart>span div:after{
-  animation: animaBloco 1s;
+#project .project.onStart > span div:after, #banner .project.onStart > span div:after {
+  animation: animaBloco 3s;
 }
-#main .project.onStart>span>div {
-  animation: divAnimation 1s;
+#project .project.onStart > span > div, #banner .project.onStart > span > div {
+  animation: divAnimation 3s;
 }
-#main .project.onScroll {
+#project .project.onScrol, #banner .project.onScroll {
   opacity: 0;
 }
 
@@ -233,77 +269,14 @@
   }
 }
 
-/* project */
-
-#project .left {
-  position: absolute;
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: all 1s ease-in-out;
-  width: 50%;
-  left: 0;
-}
-
-#project .left.in {
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-#project .right {
-  position: absolute;
-  transform: translateX(100%);
-  opacity: 0;
-  transition: all 1s ease-in-out;
-  width: 50%;
-  left: 0;
-}
-
-#project .right.in {
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-#project .left_txt {
-  position: absolute;
-  left: 0;
-  width: 40%;
-  text-align: right;
-}
-
-#project .right_txt {
-  position: absolute;
-  right: 0;
-  width: 40%;
-}
-
-#project .project3_left {
-  position: absolute;
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: all 1s ease-in-out;
-  width: 50%;
-  left: 0;
-}
-
-#project .project3_left.in {
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-#project .project_right {
-  position: absolute;
-  right: 0;
-  width: 40%;
-}
-
 /* project1 mockup PC */
 #project1 .mockup {
   display: inline-block;
-  width: 600px;
-  height: 450px;
-  position: relative;
-  top: 0;
-  left: 200px;
+  width: 100%;
+  height: 29rem;
+  position: absolute;
+  top: 170px;
+  right: 39px;
 }
 
 #project1 .mockup .computer {
@@ -313,108 +286,100 @@
 
 #project1 .mockup a.hidden {
   display: block;
-  width: 452px;
-  height: 254px;
+  width: 86.8%;
+  height: 82%;
   position: absolute;
   overflow: hidden;
-  top: 25px;
-  left: 127px;
-}
-
-#project1 .hidden img {
-  position: relative;
-  width: 100%;
+  top: 26px;
+  left: 6.5%;
 }
 
 /* project1 mockup Phone */
 #project1 .mockup2 {
   display: inline-block;
-  width: 180px;
-  height: 400px;
-  position: relative;
-  top: 65px;
-  left: 125px;
+  width: 135px;
+  height: 270px;
+  position: absolute;
+  top: 373px;
+  left: 685px;
 }
 
 #project1 .mockup2 .phone {
   position: absolute;
-  width: 170px;
+  width: 100%;
 }
 
 #project1 .mockup2 a.hidden {
   display: block;
-  width: 150px;
-  height: 224px;
+  width: 88%;
+  height: 66.5%;
   position: absolute;
   overflow: hidden;
-  top: 56px;
-  left: 11px;
+  top: 44px;
+  left: 10px;
 }
 
-/* Scroll Animation*/
+/* Project Scroll Animation*/
 #project .project_info {
-  position: relative;
+  text-align: left;
+  padding-top: 2rem;
 }
 
 #project .project_info > * {
   display: block;
-  font-size: 3vw;
+  font-size: 38px;
 }
 /* Project1 Scroll Animation */
 
-#project1 .project_title {
+#project .left {
+  position: absolute;
+  transform: translateX(-100%);
   opacity: 0;
-  transform: translateY(200px) scaleY(0);
-  transform-origin: 0 0;
-  transition: all 2s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+
+#project .left.in {
+  transform: translateX(0%);
+  opacity: 1;
 }
 
 #project1 .language {
+  position: relative;
+  transform: translateX(100%);
   opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 1.4s cubic-bezier(0, 0.66, 0.38, 1.01);
+  transition: all 1s ease-in-out;
+  width: 100%;
 }
 
 #project1 .spec {
+  position: relative;
+  transform: translateX(100%);
   opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 1.8s cubic-bezier(0, 0.66, 0.38, 1.01);
+  transition: all 1s ease-in-out;
+  width: 100%;
 }
 
 #project1 .epilog {
+  position: relative;
+  transform: translateX(100%);
   opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 2.2s cubic-bezier(0, 0.66, 0.38, 1.01);
+  transition: all 1s ease-in-out;
+  width: 100%;
 }
 
-#project1 .project_title.show {
+#project1 .project_info *.show {
+  transform: translateX(0%);
   opacity: 1;
-  transform: translateY(0px) scaleY(1);
-}
-
-#project1 .language.show {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-#project1 .spec.show {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-#project1 .epilog.show {
-  opacity: 1;
-  transform: translateY(0px);
 }
 /* project2 */
 /* project2 mockup PC */
 #project2 .mockup {
   display: inline-block;
-  width: 600px;
-  height: 450px;
+  width: 100%;
+  height: 29rem;
   position: absolute;
-  top: 0;
-  left: 970px;
+  top: 170px;
 }
 
 #project2 .mockup .computer {
@@ -424,99 +389,102 @@
 
 #project2 .mockup a.hidden {
   display: block;
-  width: 452px;
-  height: 254px;
+  width: 86.8%;
+  height: 82%;
   position: absolute;
   overflow: hidden;
-  top: 25px;
-  left: 127px;
-}
-
-#project2 .hidden img {
-  position: relative;
-  width: 100%;
+  top: 26px;
+  left: 6.5%;
 }
 
 /* project2 mockup Phone */
 #project2 .mockup2 {
   display: inline-block;
-  width: 180px;
-  height: 400px;
+  width: 135px;
+  height: 270px;
   position: absolute;
-  top: 65px;
-  left: 980px;
+  top: 404px;
+  right: -2px;
 }
 
 #project2 .mockup2 .phone {
   position: absolute;
-  width: 170px;
+  width: 100%;
 }
 
 #project2 .mockup2 a.hidden {
   display: block;
-  width: 150px;
-  height: 224px;
+  width: 88%;
+  height: 66.5%;
   position: absolute;
   overflow: hidden;
-  top: 56px;
-  left: 11px;
+  top: 44px;
+  left: 10px;
+}
+
+/* project2 mockup Tablet */
+#project2 .mockup3 {
+  display: inline-block;
+  width: 401px;
+  height: 280px;
+  position: absolute;
+  top: 397px;
+  right: 489px;
+}
+
+#project2 .mockup3 .tablet {
+  position: absolute;
+  width: 100%;
+}
+
+#project2 .mockup3 a.hidden {
+  display: block;
+  width: 93%;
+  height: 83.5%;
+  position: absolute;
+  overflow: hidden;
+  top: 17px;
+  left: 15px;
+}
+
+/* Project2 Scroll Animation */
+
+#project .right {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(200px) scaleY(0);
+  transform-origin: 0 0;
+  transition: all 2s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
+  width: 100%;
+}
+
+#project .right.in {
+  opacity: 1;
+  transform: translateY(0px) scaleY(1);
 }
 
 
-/* Project2 Scroll Animation */
-#project2 .project_title {
+#project2 .project_info * {
   opacity: 0;
   transform: translateY(200px) scaleY(0);
   transform-origin: 0 0;
   transition: all 2s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
 
-#project2 .language {
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 1.4s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-
-#project2 .spec {
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 1.8s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-
-#project2 .epilog {
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 2.2s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-
-#project2 .project_title.show {
-  opacity: 1;
+#project2 .project_info *.show {
   transform: translateY(0px) scaleY(1);
+  opacity: 1;
 }
 
-#project2 .language.show {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-#project2 .spec.show {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-#project2 .epilog.show {
-  opacity: 1;
-  transform: translateY(0px);
-}
 /* project3 */
 /* project3 mockup PC */
 #project3 .mockup {
   display: inline-block;
-  width: 600px;
-  height: 450px;
-  position: relative;
-  top: 0;
-  left: 200px;
+  width: 100%;
+  height: 29rem;
+  position: absolute;
+  top: 170px;
+  right: 39px;
 }
 
 #project3 .mockup .computer {
@@ -526,96 +494,273 @@
 
 #project3 .mockup a.hidden {
   display: block;
-  width: 452px;
-  height: 254px;
+  width: 87%;
+  height: 88%;
   position: absolute;
   overflow: hidden;
-  top: 25px;
-  left: 127px;
-}
-
-#project3 .hidden img {
-  position: relative;
-  width: 100%;
+  top: 26px;
+  left: 6.5%;
 }
 
 /* project3 mockup Phone */
 #project3 .mockup2 {
   display: inline-block;
-  width: 180px;
-  height: 400px;
-  position: relative;
-  top: 65px;
-  left: 125px;
+  width: 135px;
+  height: 270px;
+  position: absolute;
+  top: 373px;
+  left: 685px;
 }
 
 #project3 .mockup2 .phone {
   position: absolute;
-  width: 170px;
+  width: 100%;
 }
 
 #project3 .mockup2 a.hidden {
   display: block;
-  width: 150px;
-  height: 224px;
+  width: 88%;
+  height: 66.5%;
   position: absolute;
   overflow: hidden;
-  top: 56px;
-  left: 11px;
+  top: 44px;
+  left: 10px;
 }
 
 /* Project3 Scroll Animation */
-#project3 .project_title {
+#project .project3_left {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 4s 1.2s cubic-bezier(0, 0.66, 0.38, 1.01);
+  width: 100%;
+}
+
+#project .project3_left.in {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+#project .project_right {
+  position: absolute;
+  right: 0;
+  width: 40%;
+}
+
+#project3 .language {
+  position: relative;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 4s 0.6s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+#project3 .spec {
+  position: relative;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 4s 0.9s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+#project3 .epilog {
+  position: relative;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 4s 1.2s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+#project3 .project_info *.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* project4 */
+/* project4 mockup PC */
+#project4 .mockup {
+  display: inline-block;
+  width: 100%;
+  height: 29rem;
+  position: absolute;
+  top: 170px;
+}
+
+#project4 .mockup .computer {
+  position: absolute;
+  width: 100%;
+}
+
+#project4 .mockup a.hidden {
+  display: block;
+  width: 86.8%;
+  height: 82%;
+  position: absolute;
+  overflow: hidden;
+  top: 26.5px;
+  left: 6.5%;
+}
+
+/* project4 mockup Phone */
+#project4 .mockup2 {
+  display: inline-block;
+  width: 135px;
+  height: 270px;
+  position: absolute;
+  top: 404px;
+  right: -2px;
+}
+
+#project4 .mockup2 .phone {
+  position: absolute;
+  width: 100%;
+}
+
+#project4 .mockup2 a.hidden {
+  display: block;
+  width: 88%;
+  height: 66.5%;
+  position: absolute;
+  overflow: hidden;
+  top: 44px;
+  left: 10px;
+}
+
+/* project4 mockup Tablet */
+#project4 .mockup3 {
+  display: inline-block;
+  width: 401px;
+  height: 280px;
+  position: absolute;
+  top: 397px;
+  right: 489px;
+}
+
+#project4 .mockup3 .tablet {
+  position: absolute;
+  width: 100%;
+}
+
+#project4 .mockup3 a.hidden {
+  display: block;
+  width: 93%;
+  height: 83.5%;
+  position: absolute;
+  overflow: hidden;
+  top: 17px;
+  left: 15px;
+}
+
+/* Project4 Scroll Animation */
+
+#project .right {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(200px) scaleY(0);
+  transform-origin: 0 0;
+  transition: all 2s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
+  width: 100%;
+}
+
+#project .right.in {
+  opacity: 1;
+  transform: translateY(0px) scaleY(1);
+}
+
+
+#project4 .project_info * {
   opacity: 0;
   transform: translateY(200px) scaleY(0);
   transform-origin: 0 0;
   transition: all 2s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
 
-#project3 .language {
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 1.4s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-
-#project3 .spec {
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 1.8s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-
-#project3 .epilog {
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 2.2s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-
-#project3 .project_title.show {
-  opacity: 1;
+#project4 .project_info *.show {
   transform: translateY(0px) scaleY(1);
-}
-
-#project3 .language.show {
   opacity: 1;
-  transform: translateY(0px);
 }
 
-#project3 .spec.show {
+
+/* banner */
+#banner.section {
+  height: 30vh;
+  margin: 7rem auto;
+  padding: 7rem 0 10rem 0;
+}
+#banner h2 {
+  background: url(../images/banners.png) no-repeat center center;
+  background-size: contain;
+  width: 1400px;
+  height: 450px;
+  position: absolute;
+  z-index: -1;
+}
+#banner .banner_area {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+  top: 96px;
+  right: 148px;
+}
+#banner .slide-content {
+  margin: 8px;
+  width: 418px;
+  height: 140px;
+  background-color: lightgray;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+#banner .slid-er {
+  height: 156px; /* slide-content height + 2*margin */
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+}
+#banner .slid-er .slides {
+  display: flex;
+}
+#banner .slid-er .slide {
+  width: 426px; /* slide-content width + margin */
+}
+#banner .button-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+#banner .button-container:hover {
   opacity: 1;
-  transform: translateY(0px);
 }
-
-#project3 .epilog.show {
-  opacity: 1;
-  transform: translateY(0px);
+#banner .button-container:hover .button {
+  transform: translate(-50%, -50%);
 }
-
+#banner .button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% + 12px));
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.25s;
+  padding: 0 8px;
+  border-radius: 12px;
+  color: white;
+  outline: 2px solid transparent;
+}
+#banner .button:after {
+  margin: 0 3px 0 5px;
+  filter: invert(1);
+}
+#banner .button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  outline: 2px solid gray;
+}
 
 /* Contactme */
 #contactme {
   background: url(../images/contactme.png) top;
   background-size: cover;
-  height: 60vh;
-  padding: 9.5rem 0 0;
+  height: 40vh;
+  padding: 9rem 0 0;
 }
-
