@@ -10,6 +10,7 @@
   height: 2.5px;
   margin: 1rem auto;
   background: #f2f0fe;
+  border-radius: 5px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 .progress_bar .bar {
@@ -18,12 +19,13 @@
   top: 0;
   bottom: 0;
   height: 3px;
+  border-radius: 5px;
   background:rgba(90, 47, 194,0.6);
 }
 .progress_bar .rate {
-  position: absolute;
-  top: 8px;
-  right: 15px;
+  position: relative;
+  top: -1.3rem;
+  left: 28rem;
   line-height: 35px;
   font-size: 1.2em;
   color: #ed4385;

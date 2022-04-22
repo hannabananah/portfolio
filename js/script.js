@@ -47,6 +47,14 @@ $(window).on("scroll", function () {
 			sections.eq(5).find("span").addClass("show");
 		}
 	})
+    sections.each(function (i, o) {
+		if (scrollTop >= sections.eq(i).offset().top - speed) {
+			$("nav ul.gnb li").eq(i).addClass("active").siblings().removeClass("active")
+		} else if (scrollTop >= sections.eq(6).offset().top - speed) {
+			sections.eq(6).find(".project5_left").addClass("in");
+			sections.eq(6).find("span").addClass("show");
+		}
+	})
 })
 // 목업스크롤이벤트
 $(".hidden").hover(

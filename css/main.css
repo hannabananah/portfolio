@@ -80,8 +80,8 @@
 #aboutme .detail_box_left {
   width: 40%;
 }
-#aboutme .detail_box_left p:after{
-  content: '';
+#aboutme .detail_box_left p:after {
+  content: "";
   position: absolute;
   width: 600px;
   height: 40px;
@@ -106,35 +106,36 @@
   position: absolute;
   z-index: -1;
 }
-#aboutme .detail_box_skill_left{
-  width: 21.5%;
+#aboutme .detail_box_skill_left {
+  width: 25%;
   height: initial;
 }
-#aboutme .detail_text_box{
+#aboutme .detail_text_box {
   border-left: 2.5px solid #f2f0fe;
   margin: 45px auto 75px;
   padding-left: 26px;
 }
-#aboutme .text{
+#aboutme .text {
   margin-bottom: 20px;
 }
-#aboutme .detail_box_skill_center{
-  width: 21.5%;
+#aboutme .detail_box_skill_center {
+  width: 25%;
   height: initial;
 }
-#aboutme .detail_box_skill_right{
-  width: 55%;
+#aboutme .detail_box_skill_right {
+  width: 45.5%;
   height: initial;
+  margin-left: 3.9rem;
 }
 #aboutme .detail_skill_box {
   width: 100%;
-  margin-top: ;
+  height: initial;
+  margin-top: 45px;
 }
-#aboutme .skill_img {
-  display: inline-block;
-  width: 280px;
+#aboutme .skill {
+  margin-bottom: 50px;
 }
-/* Project */
+  /* Project */
 #project {
   background-color: #f4f7fa;
   margin: 7rem auto 0;
@@ -148,7 +149,8 @@
 #project1.section,
 #project2.section,
 #project3.section,
-#project4.section {
+#project4.section,
+#project5.section {
   height: 80vh;
   padding: 5rem 0;
 }
@@ -156,6 +158,7 @@
 #project2 .container,
 #project3 .container,
 #project4 .container,
+#project5 .container,
 #banner .container {
   display: flex;
   justify-content: space-between;
@@ -668,6 +671,103 @@
   transform: translateY(0px) scaleY(1);
   opacity: 1;
 }
+/* project5 */
+/* project5 mockup PC */
+#project5 .mockup {
+  display: inline-block;
+  width: 842px;
+  height: 455px;
+  position: absolute;
+  top: 170px;
+  left: -14px;
+}
+
+#project5 .mockup .computer {
+  position: absolute;
+  width: 100%;
+}
+
+#project5 .mockup a.hidden {
+  display: block;
+  width: 87%;
+  height: 84%;
+  position: absolute;
+  overflow: hidden;
+  top: 25px;
+  left: 57px;
+}
+
+/* project5 mockup Phone */
+#project5 .mockup2 {
+  display: inline-block;
+  width: 135px;
+  height: 270px;
+  position: absolute;
+  top: 373px;
+  left: 685px;
+}
+
+#project5 .mockup2 .phone {
+  position: absolute;
+  width: 100%;
+}
+
+#project5 .mockup2 a.hidden {
+  display: block;
+  width: 88%;
+  height: 66.5%;
+  position: absolute;
+  overflow: hidden;
+  top: 44px;
+  left: 10px;
+}
+
+/* Project5 Scroll Animation */
+#project .project5_left {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 4s 1.2s cubic-bezier(0, 0.66, 0.38, 1.01);
+  width: 100%;
+}
+
+#project .project5_left.in {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+#project .project_right {
+  position: absolute;
+  right: 0;
+  width: 40%;
+}
+
+#project5 .language {
+  position: relative;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 4s 0.5s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+#project5 .spec {
+  position: relative;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 4s 0.8s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+#project5 .epilog {
+  position: relative;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 4s 1.1s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+#project5 .project_info *.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 
 /* banner */
 #banner.section {

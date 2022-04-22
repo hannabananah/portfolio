@@ -95,6 +95,11 @@
   vertical-align: middle;
   text-align: left;
 }
+.font_skill{
+  font-family: "roboto", "맑은고딕", sans-serif;
+  font-size: 15px;
+  color: #333;
+}
 .font_projecthead {
   font-family: "Tiempos Headline", "맑은고딕", sans-serif;
   font-weight: bold;
