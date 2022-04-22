@@ -32,7 +32,7 @@
   height: 50px;
 }
 #header h1 {
-  background: url(../images/loopie.gif) no-repeat left center;
+  background: url(#) no-repeat left center;
   background-size: contain;
   width: 80px;
   height: 80px;
@@ -84,11 +84,11 @@ ul li a:hover:after {
 ul li a:after {
   content: "";
   position: absolute;
-  bottom: 5px;
+  bottom: -3px;
   left: 0;
   width: 0;
-  height: 35px;
-  background-color: rgb(196, 237, 253, 0.2);
+  height: 5px;
+  background-color: #ed4385;
 }
 
 /* gnb */
@@ -118,8 +118,8 @@ ul li a:after {
   margin-bottom: 15px;
 }
 .gnb.pos-fixed a:after {
-  border-radius: 10px;
-  height: 33px;
-  border-bottom-style: groove;
-  background-color: rgba(142,129,228,0.1);
+  position: absolute;
+  bottom: 10px;
+  height: 1px;
+  background-color: #ed4385;
 }

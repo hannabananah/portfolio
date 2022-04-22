@@ -1,38 +1,24 @@
 @charset "UTF-8";
 
 #aboutme .animation {
-    position: relative;
-    left: 225px;
-    bottom: 371px;
-    opacity: 0;
     transition: all 0.5s;
 }
-#aboutme .skill_area:hover .animation{
-    opacity:1;
-}
-
 
 .progress_bar {
   position: relative;
-  width: 895px;
-  height: 50px;
-  margin: 4.5rem auto;
-  border-radius: 5px;
-  background: rgba(222, 214, 255, 0.14);
-  border-radius: 25px;
+  width: 425px;
+  height: 2.5px;
+  margin: 1rem auto;
+  background: #f2f0fe;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.7px);
-  -webkit-backdrop-filter: blur(2.7px);
-  border: 1px solid rgba(222, 214, 255, 0.38);
 }
 .progress_bar .bar {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  width: 0;
-  background: linear-gradient(to right, rgba(90, 47, 194,0.6),rgba(142, 125, 255,0.6),rgba(175, 165, 243,0.6),rgb(242, 240, 255,0.6));
-  border-radius: 5px;
+  height: 3px;
+  background:rgba(90, 47, 194,0.6);
 }
 .progress_bar .rate {
   position: absolute;
@@ -40,5 +26,5 @@
   right: 15px;
   line-height: 35px;
   font-size: 1.2em;
-  color: #5a2fc2;
+  color: #ed4385;
 }

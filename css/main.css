@@ -3,7 +3,7 @@
 /* main */
 
 #main .main_banner {
-  background: url(../images/main_background.png) no-repeat top;
+  background: url(../images/solid_color.png) no-repeat top;
   background-size: contain;
   margin-top: -3.3rem;
   height: 1001px;
@@ -32,34 +32,6 @@
   animation-delay: 0.5s;
 }
 
-#main .main_banner .effect {
-  font-size: 55px;
-}
-
-#main #title1:hover {
-  color: white;
-  text-shadow: 0 0 30px blue;
-}
-
-#main #title2:hover {
-  color: white;
-  text-shadow: 0 0 30px red;
-}
-
-#main #title3:hover {
-  color: white;
-  text-shadow: 0 0 30px orange;
-}
-
-/* main detail btn */
-#main .main_banner .slogan_area .detail_link {
-  position: absolute;
-  top: 220px;
-  left: 0;
-  display: flex;
-  margin-left: 5rem;
-}
-
 #main .profile {
   position: absolute;
   top: 354px;
@@ -73,35 +45,58 @@
   height: 100%;
   padding: 9rem 0 0;
 }
-#aboutme h2 {
-  background: url(../images/aboutme.png) no-repeat center center;
-  background-size: contain;
-  width: 1400px;
-  height: 432px;
-  position: absolute;
-  z-index: -1;
-}
 #aboutme .profile_area {
   width: 100%;
-  height: 27rem;
-  margin-bottom: 14rem;
+  height: 40rem;
+  margin-bottom: 13rem;
 }
 #aboutme .profile_img {
-  width: 21.4%;
+  width: 35%;
 }
 #aboutme .profile_detail_area {
-  width: 74%;
+  width: 50%;
   height: inherit;
-  margin: 0px 0 0 64px;
+  margin: 1% 0 0 4%;
 }
-#aboutme .profile_detail_area p{
-  padding-bottom: 2.6rem;
+#aboutme .project {
+  font-family: "Tiempos Headline";
+  display: flex;
+  justify-content: left;
+  font-size: 42px;
+  font-weight: bold;
+  height: 63px;
+}
+#aboutme .profile_detail_area p {
+  padding-bottom: 3.5rem;
+}
+#aboutme .detail_box_top {
+  width: 100%;
+  height: 45%;
+}
+#aboutme .detail_box_bottom {
+  width: 100%;
+  height: 55%;
+}
+#aboutme .detail_box_left {
+  width: 40%;
+}
+#aboutme .detail_box_left p:after{
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 40px;
+  left: 49.5%;
+  border-bottom: 2.5px solid #f2f0fe;
+}
+#aboutme .detail_box_right {
+  width: 60%;
 }
 
 /* skills */
 #aboutme .skill_area {
   width: 100%;
-  height: 27rem;
+  height: 30rem;
+  padding-top: 100px;
 }
 #aboutme .skill_area h2 {
   background: url(../images/skills.png) no-repeat center center;
@@ -111,41 +106,33 @@
   position: absolute;
   z-index: -1;
 }
-#aboutme .skill_area .skill {
-  margin-bottom: 70px;
+#aboutme .detail_box_skill_left{
+  width: 21.5%;
+  height: initial;
+}
+#aboutme .detail_text_box{
+  border-left: 2.5px solid #f2f0fe;
+  margin: 45px auto 75px;
+  padding-left: 26px;
+}
+#aboutme .text{
+  margin-bottom: 20px;
+}
+#aboutme .detail_box_skill_center{
+  width: 21.5%;
+  height: initial;
+}
+#aboutme .detail_box_skill_right{
+  width: 55%;
+  height: initial;
+}
+#aboutme .detail_skill_box {
+  width: 100%;
+  margin-top: ;
 }
 #aboutme .skill_img {
   display: inline-block;
   width: 280px;
-  height: 55px;
-  margin: 0 auto;
-  vertical-align: middle;
-}
-#aboutme .skill_img > div {
-  width: 20%;
-  margin: 0 6px;
-}
-#aboutme .skill1 .skill_img {
-  margin-left: 65px;
-}
-#aboutme .skill2 .skill_img {
-  margin-left: 80px;
-}
-#aboutme .skill2 .skill_img > div {
-  margin: 0 15px;
-}
-#aboutme .skill3 .skill_img {
-  margin-left: 60px;
-}
-#aboutme .skill3 .skill_img > div {
-  margin: 0 20px;
-}
-#aboutme .skill3 .skill_img > div:last-child {
-  padding-top: 15px;
-  width: 40%;
-}
-#aboutme .skill_area .skill > p {
-  padding-right: 17%;
 }
 /* Project */
 #project {
@@ -181,35 +168,36 @@
   z-index: 0;
   height: 425px;
 }
-#project .left_area1{
+#project .left_area1 {
   position: relative;
   width: 60%;
   padding-right: 132px;
 }
-#project .right_area1{
+#project .right_area1 {
   width: 40%;
   position: relative;
   padding-top: 170px;
 }
-#project .left_area2{
+#project .left_area2 {
   width: 40%;
   position: relative;
   padding-top: 170px;
 }
-#project .right_area2{
+#project .right_area2 {
   position: relative;
   width: 60%;
 }
 /* project&banner title effect */
+
 #project .project {
-  font-family: Sans-serif;
+  font-family: "Tiempos Headline";
   display: flex;
   justify-content: left;
   font-size: 48px;
   height: 63px;
 }
-#banner .project{
-  font-family: Sans-serif;
+#banner .project {
+  font-family: "Tiempos Headline";
   text-align: center;
   display: flex;
   justify-content: center;
@@ -218,17 +206,23 @@
   position: relative;
   bottom: 6rem;
 }
-#project .project span, #banner .project span{
+#aboutme .project span,
+#project .project span,
+#banner .project span {
   position: relative;
 }
-#project .project span > div, #banner .project span > div {
+#aboutme .project span > div,
+#project .project span > div,
+#banner .project span > div {
   height: 100%;
   overflow: hidden;
   text-overflow: clip;
   white-space: nowrap;
 }
 
-#project .project span > div:after, #banner .project span > div:after {
+#aboutme .project span > div:after,
+#project .project span > div:after,
+#banner .project span > div:after {
   content: "";
   height: 50px;
   width: 0;
@@ -237,16 +231,16 @@
   background: black;
   top: 0;
 }
-#project .project.onStart > span div:after, #banner .project.onStart > span div:after {
+#aboutme .project.onStart > span div:after,
+#project .project.onStart > span div:after,
+#banner .project.onStart > span div:after {
   animation: animaBloco 3s;
 }
-#project .project.onStart > span > div, #banner .project.onStart > span > div {
+#aboutme .project.onStart > span > div,
+#project .project.onStart > span > div,
+#banner .project.onStart > span > div {
   animation: divAnimation 3s;
 }
-#project .project.onScrol, #banner .project.onScroll {
-  opacity: 0;
-}
-
 @keyframes animaBloco {
   0% {
     left: 0;
@@ -272,8 +266,8 @@
 /* project1 mockup PC */
 #project1 .mockup {
   display: inline-block;
-  width: 100%;
-  height: 29rem;
+  width: 842px;
+  height: 455px;
   position: absolute;
   top: 170px;
   right: 39px;
@@ -286,12 +280,12 @@
 
 #project1 .mockup a.hidden {
   display: block;
-  width: 86.8%;
-  height: 82%;
+  width: 86.5%;
+  height: 83.5%;
   position: absolute;
   overflow: hidden;
   top: 26px;
-  left: 6.5%;
+  left: 58px;
 }
 
 /* project1 mockup Phone */
@@ -376,8 +370,8 @@
 /* project2 mockup PC */
 #project2 .mockup {
   display: inline-block;
-  width: 100%;
-  height: 29rem;
+  width: 842px;
+  height: 455px;
   position: absolute;
   top: 170px;
 }
@@ -390,11 +384,11 @@
 #project2 .mockup a.hidden {
   display: block;
   width: 86.8%;
-  height: 82%;
+  height: 84%;
   position: absolute;
   overflow: hidden;
   top: 26px;
-  left: 6.5%;
+  left: 59px;
 }
 
 /* project2 mockup Phone */
@@ -463,7 +457,6 @@
   transform: translateY(0px) scaleY(1);
 }
 
-
 #project2 .project_info * {
   opacity: 0;
   transform: translateY(200px) scaleY(0);
@@ -480,11 +473,11 @@
 /* project3 mockup PC */
 #project3 .mockup {
   display: inline-block;
-  width: 100%;
-  height: 29rem;
+  width: 842px;
+  height: 455px;
   position: absolute;
   top: 170px;
-  right: 39px;
+  left: -14px;
 }
 
 #project3 .mockup .computer {
@@ -495,11 +488,11 @@
 #project3 .mockup a.hidden {
   display: block;
   width: 87%;
-  height: 88%;
+  height: 84%;
   position: absolute;
   overflow: hidden;
-  top: 26px;
-  left: 6.5%;
+  top: 25px;
+  left: 57px;
 }
 
 /* project3 mockup Phone */
@@ -551,21 +544,21 @@
   position: relative;
   opacity: 0;
   transform: translateY(200px);
-  transition: all 4s 0.6s cubic-bezier(0, 0.66, 0.38, 1.01);
+  transition: all 4s 0.5s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
 
 #project3 .spec {
   position: relative;
   opacity: 0;
   transform: translateY(200px);
-  transition: all 4s 0.9s cubic-bezier(0, 0.66, 0.38, 1.01);
+  transition: all 4s 0.8s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
 
 #project3 .epilog {
   position: relative;
   opacity: 0;
   transform: translateY(200px);
-  transition: all 4s 1.2s cubic-bezier(0, 0.66, 0.38, 1.01);
+  transition: all 4s 1.1s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
 
 #project3 .project_info *.show {
@@ -577,8 +570,8 @@
 /* project4 mockup PC */
 #project4 .mockup {
   display: inline-block;
-  width: 100%;
-  height: 29rem;
+  width: 842px;
+  height: 455px;
   position: absolute;
   top: 170px;
 }
@@ -590,12 +583,12 @@
 
 #project4 .mockup a.hidden {
   display: block;
-  width: 86.8%;
-  height: 82%;
+  width: 86.4%;
+  height: 83.5%;
   position: absolute;
   overflow: hidden;
   top: 26.5px;
-  left: 6.5%;
+  left: 58px;
 }
 
 /* project4 mockup Phone */
@@ -664,7 +657,6 @@
   transform: translateY(0px) scaleY(1);
 }
 
-
 #project4 .project_info * {
   opacity: 0;
   transform: translateY(200px) scaleY(0);
@@ -676,7 +668,6 @@
   transform: translateY(0px) scaleY(1);
   opacity: 1;
 }
-
 
 /* banner */
 #banner.section {
@@ -759,8 +750,16 @@
 
 /* Contactme */
 #contactme {
-  background: url(../images/contactme.png) top;
+  background: url(../images/dark-contact.png) top;
   background-size: cover;
   height: 40vh;
   padding: 9rem 0 0;
+  text-align: center;
+  color: #fff;
+}
+#contactme .material-icons {
+  color: #fff;
+}
+#contactme a {
+  color: #fff;
 }
