@@ -30,7 +30,6 @@
   font-size: 13.5px;
   line-height: 15px;
   letter-spacing: 0;
-  color: #fff;
   text-transform: uppercase;
 }
 .font_slogan1 {
@@ -39,7 +38,7 @@
   font-size: 50px;
   line-height: 42px;
   letter-spacing: 0;
-  color: #fff;
+  color: #333;
   text-align: center;
 }
 .font_slogan2 {
@@ -47,7 +46,7 @@
   font-size: 30px;
   line-height: 88px;
   letter-spacing: -2.3px;
-  color: #fff;
+  color: #333;
   white-space: nowrap;
   text-align: center;
 }
@@ -130,5 +129,4 @@
   font-size: 45px;
   line-height: 54px;
   letter-spacing: -25%;
-  color: #fff;
 }

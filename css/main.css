@@ -3,7 +3,7 @@
 /* main */
 
 #main .main_banner {
-  background: url(../images/solid_color.png) no-repeat top;
+  background: url(../images/main.png) no-repeat top;
   background-size: contain;
   margin-top: -3.3rem;
   height: 1001px;
@@ -72,6 +72,7 @@
 #aboutme .detail_box_top {
   width: 100%;
   height: 45%;
+  color: #333;
 }
 #aboutme .detail_box_bottom {
   width: 100%;
@@ -171,6 +172,12 @@
   z-index: 0;
   height: 425px;
 }
+#project .section .mask_left{
+  text-align: left;
+}
+#project .section .mask_right{
+  text-align: right;
+}
 #project .left_area1 {
   position: relative;
   width: 60%;
@@ -194,90 +201,86 @@
 }
 
 /* project&banner title effect */
-
-#project1 .project,#project3 .project,#project5 .project {
-  font-family: "Tiempos Headline";
-  display: flex;
-  justify-content: left;
-  font-size: 42px;
-  font-weight: bold;
-  height: 65px;
-  color: #969696;
-}
-#project2 .project,#project4 .project {
-  font-family: "Tiempos Headline";
-  display: flex;
-  justify-content: right;
-  font-size: 42px;
-  font-weight: bold;
-  height: 63px;
-  color: #969696;
-}
-#banner .project {
-  font-family: "Tiempos Headline";
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  font-size: 48px;
-  height: 63px;
-  position: relative;
-  bottom: 6rem;
-}
-#aboutme .project span,
-#project .project span,
-#banner .project span {
-  position: relative;
-}
-#aboutme .project span > div,
-#project .project span > div,
-#banner .project span > div {
-  height: 100%;
+#main .title_mask {
   overflow: hidden;
-  text-overflow: clip;
-  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+  font-family: "Tiempos Headline";
+  font-size: 42px;
+  line-height: 40.8px;
+  margin-bottom: 2rem;
+  color: #969696;
+  transition: transform 0.5s;
+}
+#main .title_mask .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  background: #969696;
+  animation: text_mask 1.5s 1 cubic-bezier(0.24, 0.77, 0.32, 0.95) both paused;
+}
+#main .title_mask .txt {
+  position: relative;
+  z-index: 20;
+  display: block;
+  animation: text_opacity 2s 1s 1 cubic-bezier(0.24, 0.77, 0.32, 0.95) both
+    paused;
 }
 
-#aboutme .project span > div:after,
-#project .project span > div:after,
-#banner .project span > div:after {
-  content: "";
-  height: 50px;
-  width: 0;
-  left: 0;
+#main .title_mask .mask2 {
   position: absolute;
-  background: black;
-  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 0%;
+  height: 40%;
+  background: #e9c400;
+  transition: width 0.5s cubic-bezier(0.24, 0.77, 0.32, 0.95);
 }
-#aboutme .project.onStart > span div:after,
-#project .project.onStart > span div:after,
-#banner .project.onStart > span div:after {
-  animation: animaBloco 3s;
+#main .title_mask:hover .mask2 {
+  width: 100%;
 }
-#aboutme .project.onStart > span > div,
-#project .project.onStart > span > div,
-#banner .project.onStart > span > div {
-  animation: divAnimation 3s;
+#main .title_mask:hover {
+  transform: translateX(-10px);
 }
-@keyframes animaBloco {
+
+@keyframes text_mask {
   0% {
-    left: 0;
-    width: 0;
+    width: 0%;
+    transform: translateX(0%);
   }
-  20% {
-    width: 40%;
-  }
-  100% {
-    width: 0;
-    left: 100%;
-  }
-}
-@keyframes divAnimation {
-  0% {
-    width: 0;
+  50% {
+    width: 100%;
+    transform: translateX(0%);
   }
   100% {
     width: 100%;
+    transform: translateX(101%);
   }
+}
+
+@keyframes text_opacity {
+  0% {
+    opacity: 0;
+    color: #3535ff;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    color: #646464;
+    transform: translateX(0%);
+  }
+}
+
+/* section.txt_mask */
+
+#main .title_mask .mask {
+  animation-play-state: running;
+}
+#main .title_mask .txt {
+  animation-play-state: running;
 }
 
 /* project1 mockup PC */
@@ -913,8 +916,8 @@
 /* banner */
 #banner.section {
   height: 30vh;
-  margin: 7rem auto;
-  padding: 7rem 0 10rem 0;
+  margin: 6rem auto;
+  padding: 6rem 0 10rem 0;
 }
 #banner h2 {
   background: url(../images/banners.png) no-repeat center center;
@@ -942,7 +945,7 @@
 }
 #banner .slid-er {
   height: 156px; /* slide-content height + 2*margin */
-  margin: auto;
+  margin: 2rem auto;
   overflow: hidden;
   width: 100%;
 }
@@ -991,16 +994,16 @@
 
 /* Contactme */
 #contactme {
-  background: url(../images/dark-contact.png) top;
+  background: url(../images/footer.png) top;
   background-size: cover;
-  height: 40vh;
-  padding: 9rem 0 0;
+  height: 26vh;
+  padding: 12rem 0 0;
   text-align: center;
-  color: #fff;
 }
-#contactme .material-icons {
-  color: #fff;
+#contactme ul li{
+  line-height: 1.5rem;
 }
-#contactme a {
-  color: #fff;
+#contactme span{
+  position: relative;
+  top: 5px;
 }
