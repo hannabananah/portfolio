@@ -16,12 +16,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'Cafe24Danjunghae';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 /* font */
 .font_gnb > li a {
@@ -33,7 +27,7 @@
   text-transform: uppercase;
 }
 .font_slogan1 {
-  font-family: "Tiempos Headline", "맑은고딕", sans-serif;
+  font-family: "DM Serif Display", "맑은고딕", sans-serif;
   font-weight: bold;
   font-size: 50px;
   line-height: 42px;
@@ -100,7 +94,7 @@
   color: #333;
 }
 .font_projecthead {
-  font-family: "Tiempos Headline", "맑은고딕", sans-serif;
+  font-family: "DM Serif Display", "맑은고딕", sans-serif;
   font-weight: bold;
   font-size: 32px;
   line-height: 38.4px;
@@ -124,7 +118,7 @@
   color: #5524c4;
 }
 .font_contactme {
-  font-family: "Tiempos Headline", "맑은고딕", sans-serif;
+  font-family: "DM Serif Display", "맑은고딕", sans-serif;
   font-weight: bold;
   font-size: 45px;
   line-height: 54px;
