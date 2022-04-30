@@ -15,7 +15,8 @@ function progressAnimation() {
 			progressText = $this.find(".rate"),
 			progressRate = progressText.attr("data-rate")
 
-		progressBar.stop().animate({ width: progressRate + "%" }, 2500)
+		progressBar.stop().animate({ width: progressRate + "%" }, 2500);
+		progressText.css('left','0').stop().animate({ left: progressRate +'%' }, 2500);
 
 		let text = function () {
 			$({ rate: 0 }).animate({ rate: progressRate },
@@ -23,7 +24,6 @@ function progressAnimation() {
 					duration: 2000,
 					progress: function () {
 						let now = this.rate
-						console.log(now)
                         progressText.text(Math.ceil(now) + "%")
 					},
                     complete: function(){isAni=true}

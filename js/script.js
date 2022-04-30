@@ -87,6 +87,21 @@ $(window).on("scroll", function () {
       sections.eq(6).find("img.logo").addClass("show");
     }
   });
+  sections.each(function (i, o) {
+    if (scrollTop >= sections.eq(i).offset().top - speed) {
+      $("nav ul.gnb li")
+        .eq(i)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+    } else if (scrollTop >= sections.eq(7).offset().top - speed) {
+      sections.eq(7).find(".right").addClass("in");
+      sections.eq(7).find("span").addClass("show");
+      sections.eq(7).find(".img_box").addClass("show");
+      sections.eq(7).find("img.logo").addClass("show");
+      sections.eq(7).find("a").addClass("show");
+    }
+  });
 });
 // 목업스크롤이벤트
 $(".hidden").hover(
@@ -94,11 +109,11 @@ $(".hidden").hover(
     let ah = $(this).innerHeight();
     let img = $(this).find("img");
     let imgh = img.innerHeight();
-    img.stop().animate({ top: ah - imgh }, 8000);
+    img.stop().animate({ top: ah - imgh }, 5000);
   },
   function () {
     let img = $(this).find("img");
-    img.stop().animate({ top: 0 }, 5000);
+    img.stop().animate({ top: 0 }, 3000);
   }
 );
 

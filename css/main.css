@@ -108,7 +108,7 @@
   z-index: -1;
 }
 #aboutme .detail_box_skill_left {
-  width: 25%;
+  width: 27%;
   height: initial;
 }
 #aboutme .detail_text_box {
@@ -120,13 +120,12 @@
   margin-bottom: 20px;
 }
 #aboutme .detail_box_skill_center {
-  width: 25%;
+  width: 30%;
   height: initial;
 }
 #aboutme .detail_box_skill_right {
-  width: 45.5%;
+  width: 40%;
   height: initial;
-  margin-left: 3.9rem;
 }
 #aboutme .detail_skill_box {
   width: 100%;
@@ -151,7 +150,8 @@
 #project2.section,
 #project3.section,
 #project4.section,
-#project5.section {
+#project5.section,
+#project6.section {
   height: 80vh;
   padding: 5rem 0;
 }
@@ -160,6 +160,7 @@
 #project3 .container,
 #project4 .container,
 #project5 .container,
+#project6 .container,
 #banner .container {
   display: flex;
   justify-content: space-between;
@@ -172,10 +173,10 @@
   z-index: 0;
   height: 425px;
 }
-#project .section .mask_left{
+#project .section .mask_left {
   text-align: left;
 }
-#project .section .mask_right{
+#project .section .mask_right {
   text-align: right;
 }
 #project .left_area1 {
@@ -186,13 +187,13 @@
 #project .right_area1 {
   width: 40%;
   position: relative;
-  padding-top: 170px;
+  padding-top: 150px;
   text-align: right;
 }
 #project .left_area2 {
   width: 33%;
   position: relative;
-  padding-top: 170px;
+  padding-top: 150px;
   text-align: left;
 }
 #project .right_area2 {
@@ -326,12 +327,13 @@
 
 #project1 .mockup2 a.hidden {
   display: block;
-  width: 88%;
-  height: 66.5%;
+  width: 95%;
+  height: 104%;
   position: absolute;
   overflow: hidden;
-  top: 44px;
-  left: 10px;
+  top: 2px;
+  left: 3.5px;
+  border-radius: 10px;
 }
 
 /* Project Scroll Animation*/
@@ -361,7 +363,7 @@
   padding-bottom: 20px;
 }
 #project .webpage:after {
-  content: '';
+  content: "";
   position: absolute;
   right: -23rem;
   top: 1.8rem;
@@ -371,7 +373,7 @@
   background-repeat: no-repeat;
 }
 #project .webpage2:after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 1.8rem;
@@ -380,7 +382,7 @@
   background-image: url(../images/squiggle.svg);
   background-repeat: no-repeat;
 }
-#project .during{
+#project .during {
   font-family: "Eulyoo-R", "맑은 고딕", sans-serif;
   font-size: 14px;
   line-height: 16.8px;
@@ -388,47 +390,47 @@
   padding-top: 2rem;
   padding-bottom: 10px;
 }
-#project .during_date{
+#project .during_date {
   font-family: "Noto Sans KR", "맑은고딕", sans-serif;
   font-size: 14px;
   color: #969696;
 }
-#project .descrip{
+#project .descrip {
   font-family: "Noto Sans KR", "맑은고딕", sans-serif;
   font-size: 14px;
   color: #969696;
-  letter-spacing: -.8px;
+  letter-spacing: -0.8px;
   padding: 1.5rem 0;
 }
-#project .language{
+#project .language {
   font-family: "Eulyoo-R", "맑은 고딕", sans-serif;
   font-size: 14px;
   line-height: 16.8px;
   color: #333;
   padding-bottom: 10px;
 }
-#project .img_box{
+#project .img_box {
   width: 100%;
   height: 40px;
 }
-#project .img_box img.logo1{
+#project .img_box img.logo1 {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
-#project .img_box img.logo2{
+#project .img_box img.logo2 {
   width: 60px;
   height: 22px;
   position: relative;
   top: 5px;
 }
-#project .epilog{
+#project .epilog {
   font-family: "Noto Sans KR", "맑은고딕", sans-serif;
   font-size: 14px;
   color: #969696;
   padding-top: 2rem;
 }
-  /* Project1 Scroll Animation */
+/* Project1 Scroll Animation */
 
 #project .left {
   position: absolute;
@@ -492,7 +494,7 @@
   width: 135px;
   height: 270px;
   position: absolute;
-  top: 404px;
+  top: 417px;
   right: -2px;
 }
 
@@ -503,12 +505,13 @@
 
 #project2 .mockup2 a.hidden {
   display: block;
-  width: 88%;
-  height: 66.5%;
+  width: 95%;
+  height: 104%;
   position: absolute;
   overflow: hidden;
-  top: 44px;
-  left: 10px;
+  top: 2px;
+  left: 4px;
+  border-radius: 10px;
 }
 
 /* project2 mockup Tablet */
@@ -529,7 +532,7 @@
 #project2 .mockup3 a.hidden {
   display: block;
   width: 93%;
-  height: 83.5%;
+  height: 100%;
   position: absolute;
   overflow: hidden;
   top: 17px;
@@ -606,12 +609,37 @@
 
 #project3 .mockup2 a.hidden {
   display: block;
-  width: 88%;
-  height: 66.5%;
+  width: 95%;
+  height: 104%;
   position: absolute;
   overflow: hidden;
-  top: 44px;
-  left: 10px;
+  top: 2px;
+  left: 3.5px;
+  border-radius: 10px;
+}
+/* project3 mockup Tablet */
+#project3 .mockup3 {
+  display: inline-block;
+  width: 401px;
+  height: 280px;
+  position: absolute;
+  top: 352px;
+  right: 503px;
+}
+
+#project3 .mockup3 .tablet {
+  position: absolute;
+  width: 100%;
+}
+
+#project3 .mockup3 a.hidden {
+  display: block;
+  width: 94%;
+  height: 100.5%;
+  position: absolute;
+  overflow: hidden;
+  top: 13px;
+  left: 13.5px;
 }
 
 /* Project3 Scroll Animation */
@@ -640,7 +668,7 @@
   transform: translateY(200px);
   transition: all 4s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
-#project3 .webpage{
+#project3 .webpage {
   position: relative;
   opacity: 0;
   transform: translateY(200px);
@@ -652,13 +680,13 @@
   transform: translateY(200px);
   transition: all 4s 0.6s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
-#project3 .during_date{
+#project3 .during_date {
   position: relative;
   opacity: 0;
   transform: translateY(200px);
   transition: all 4s 0.7s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
-#project3 .descrip{
+#project3 .descrip {
   position: relative;
   opacity: 0;
   transform: translateY(200px);
@@ -729,12 +757,13 @@
 
 #project4 .mockup2 a.hidden {
   display: block;
-  width: 88%;
-  height: 66.5%;
+  width: 95%;
+  height: 104%;
   position: absolute;
   overflow: hidden;
-  top: 44px;
-  left: 10px;
+  top: 2px;
+  left: 4px;
+  border-radius: 10px;
 }
 
 /* project4 mockup Tablet */
@@ -755,11 +784,11 @@
 #project4 .mockup3 a.hidden {
   display: block;
   width: 93%;
-  height: 83.5%;
+  height: 100%;
   position: absolute;
   overflow: hidden;
-  top: 17px;
-  left: 15px;
+  top: 14px;
+  left: 13.5px;
 }
 
 /* Project4 Scroll Animation */
@@ -832,12 +861,13 @@
 
 #project5 .mockup2 a.hidden {
   display: block;
-  width: 88%;
-  height: 66.5%;
+  width: 95%;
+  height: 104.5%;
   position: absolute;
   overflow: hidden;
-  top: 44px;
-  left: 10px;
+  top: 2px;
+  left: 2.5px;
+  border-radius: 10px;
 }
 
 /* Project5 Scroll Animation */
@@ -866,7 +896,7 @@
   transform: translateY(200px);
   transition: all 4s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
-#project5 .webpage{
+#project5 .webpage {
   position: relative;
   opacity: 0;
   transform: translateY(200px);
@@ -878,13 +908,13 @@
   transform: translateY(200px);
   transition: all 4s 0.6s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
-#project5 .during_date{
+#project5 .during_date {
   position: relative;
   opacity: 0;
   transform: translateY(200px);
   transition: all 4s 0.7s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
-#project5 .descrip{
+#project5 .descrip {
   position: relative;
   opacity: 0;
   transform: translateY(200px);
@@ -912,6 +942,72 @@
 #project5 .project_info *.show {
   opacity: 1;
   transform: translateY(0px);
+}
+
+/* project6 */
+/* project6 preview App */
+#project6 .right_area2 {
+  position: relative;
+  width: 60%;
+  padding-top: 150px;
+}
+#project6 .app_area {
+  display: inline-block;
+  width: 210px;
+  height: 444px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 57px;
+}
+#project6 .app_gif {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 20px;
+}
+/* project6 mockup Phone */
+#project6 .mockup2 {
+  display: inline-block;
+  width: 246px;
+  height: 518px;
+  position: absolute;
+  top: 0;
+  left: 370px;
+  overflow: hidden;
+  background: url(../images/mockupphone.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.crop {
+  position: relative;
+  overflow: hidden;
+  width: 235px;
+  height: 511px;
+  top: 4px;
+  left: 4px;
+  border-radius: 25px;
+}
+
+iframe {
+  display: block;
+  position: absolute;
+  width: 237px;
+  height: 559px;
+}
+
+/* Project6 Scroll Animation */
+
+#project6 .project_info * {
+  opacity: 0;
+  transform: translateY(200px) scaleY(0);
+  transform-origin: 0 0;
+  transition: all 2s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
+}
+
+#project6 .project_info *.show {
+  transform: translateY(0px) scaleY(1);
+  opacity: 1;
 }
 
 /* banner */
@@ -1000,10 +1096,10 @@
   padding: 12rem 0 0;
   text-align: center;
 }
-#contactme ul li{
+#contactme ul li {
   line-height: 1.5rem;
 }
-#contactme span{
+#contactme span {
   position: relative;
   top: 5px;
 }
