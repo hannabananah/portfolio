@@ -31,7 +31,6 @@
   animation: fadein 2.5s ease-out alternate both;
   animation-delay: 0.5s;
 }
-
 #main .profile {
   position: absolute;
   top: 354px;
@@ -424,10 +423,10 @@
   position: relative;
   top: 5px;
 }
-#project .epilog {
+#project .epilog a{
   font-family: "Noto Sans KR", "맑은고딕", sans-serif;
   font-size: 14px;
-  color: #969696;
+  color: #5722cd;
   padding-top: 2rem;
 }
 /* Project1 Scroll Animation */
@@ -567,152 +566,69 @@
   opacity: 1;
 }
 /* project3 */
-/* project3 mockup PC */
-#project3 .mockup {
+/* project3 preview App */
+#project3 .left_area1 {
+  position: relative;
+  width: 60%;
+  padding-top: 150px;
+}
+#project3 .app_area {
   display: inline-block;
-  width: 842px;
-  height: 455px;
+  width: 210px;
+  height: 444px;
   position: absolute;
-  top: 170px;
-  left: -14px;
+  top: 0;
+  left: 0;
+  padding-top: 57px;
 }
-
-#project3 .mockup .computer {
-  position: absolute;
-  width: 100%;
+#project3 .app_gif {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 20px;
 }
-
-#project3 .mockup a.hidden {
-  display: block;
-  width: 87%;
-  height: 84%;
-  position: absolute;
-  overflow: hidden;
-  top: 25px;
-  left: 57px;
-}
-
 /* project3 mockup Phone */
 #project3 .mockup2 {
   display: inline-block;
-  width: 135px;
-  height: 270px;
+  width: 246px;
+  height: 518px;
   position: absolute;
-  top: 373px;
-  left: 685px;
-}
-
-#project3 .mockup2 .phone {
-  position: absolute;
-  width: 100%;
-}
-
-#project3 .mockup2 a.hidden {
-  display: block;
-  width: 95%;
-  height: 104%;
-  position: absolute;
+  top: 0;
+  left: 370px;
   overflow: hidden;
-  top: 2px;
-  left: 3.5px;
-  border-radius: 10px;
-}
-/* project3 mockup Tablet */
-#project3 .mockup3 {
-  display: inline-block;
-  width: 401px;
-  height: 280px;
-  position: absolute;
-  top: 352px;
-  right: 503px;
+  background: url(../images/mockupphone.png) no-repeat;
+  background-size: 100% 100%;
 }
 
-#project3 .mockup3 .tablet {
-  position: absolute;
-  width: 100%;
-}
-
-#project3 .mockup3 a.hidden {
-  display: block;
-  width: 94%;
-  height: 100.5%;
-  position: absolute;
+.crop {
+  position: relative;
   overflow: hidden;
-  top: 13px;
-  left: 13.5px;
+  width: 235px;
+  height: 511px;
+  top: 4px;
+  left: 4px;
+  border-radius: 25px;
+}
+
+iframe {
+  display: block;
+  position: absolute;
+  width: 237px;
+  height: 559px;
 }
 
 /* Project3 Scroll Animation */
-#project .project3_left {
-  position: absolute;
+
+#project3 .project_info * {
   opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 1.2s cubic-bezier(0, 0.66, 0.38, 1.01);
-  width: 100%;
+  transform: translateY(200px) scaleY(0);
+  transform-origin: 0 0;
+  transition: all 2s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
 }
 
-#project .project3_left.in {
-  transform: translateY(0px);
-  opacity: 1;
-}
-
-#project .project_right {
-  position: absolute;
-  right: 0;
-  width: 40%;
-}
-
-#project3 .project_title {
-  position: relative;
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-#project3 .webpage {
-  position: relative;
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 0.5s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-#project3 .during {
-  position: relative;
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 0.6s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-#project3 .during_date {
-  position: relative;
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 0.7s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-#project3 .descrip {
-  position: relative;
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 0.8s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-#project3 .language {
-  position: relative;
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 0.9s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-#project3 .logo {
-  position: relative;
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 0.9s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
-#project3 .epilog {
-  position: relative;
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 4s 1s cubic-bezier(0, 0.66, 0.38, 1.01);
-}
 #project3 .project_info *.show {
+  transform: translateY(0px) scaleY(1);
   opacity: 1;
-  transform: translateY(0px);
 }
 
 /* project4 */
@@ -732,12 +648,12 @@
 
 #project4 .mockup a.hidden {
   display: block;
-  width: 86.4%;
-  height: 83.5%;
+  width: 86.5%;
+  height: 84%;
   position: absolute;
   overflow: hidden;
-  top: 26.5px;
-  left: 58px;
+  top: 25px;
+  left: 57px;
 }
 
 /* project4 mockup Phone */
@@ -783,12 +699,12 @@
 
 #project4 .mockup3 a.hidden {
   display: block;
-  width: 93%;
-  height: 100%;
+  width: 94.5%;
+  height: 100.5%;
   position: absolute;
   overflow: hidden;
-  top: 14px;
-  left: 13.5px;
+  top: 13.5px;
+  left: 12px;
 }
 
 /* Project4 Scroll Animation */
@@ -818,6 +734,7 @@
   transform: translateY(0px) scaleY(1);
   opacity: 1;
 }
+
 /* project5 */
 /* project5 mockup PC */
 #project5 .mockup {
@@ -945,58 +862,96 @@
 }
 
 /* project6 */
-/* project6 preview App */
-#project6 .right_area2 {
-  position: relative;
-  width: 60%;
-  padding-top: 150px;
-}
-#project6 .app_area {
+/* project6 mockup PC */
+#project6 .mockup {
   display: inline-block;
-  width: 210px;
-  height: 444px;
+  width: 842px;
+  height: 455px;
   position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 57px;
+  top: 170px;
 }
-#project6 .app_gif {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 20px;
+
+#project6 .mockup .computer {
+  position: absolute;
+  width: 100%;
 }
+
+#project6 .mockup a.hidden {
+  display: block;
+  width: 86.4%;
+  height: 83.5%;
+  position: absolute;
+  overflow: hidden;
+  top: 26.5px;
+  left: 58px;
+}
+
 /* project6 mockup Phone */
 #project6 .mockup2 {
   display: inline-block;
-  width: 246px;
-  height: 518px;
+  width: 135px;
+  height: 270px;
   position: absolute;
-  top: 0;
-  left: 370px;
-  overflow: hidden;
-  background: url(../images/mockupphone.png) no-repeat;
-  background-size: 100% 100%;
+  top: 404px;
+  right: -2px;
 }
 
-.crop {
-  position: relative;
-  overflow: hidden;
-  width: 235px;
-  height: 511px;
-  top: 4px;
-  left: 4px;
-  border-radius: 25px;
+#project6 .mockup2 .phone {
+  position: absolute;
+  width: 100%;
 }
 
-iframe {
+#project6 .mockup2 a.hidden {
   display: block;
+  width: 95%;
+  height: 104%;
   position: absolute;
-  width: 237px;
-  height: 559px;
+  overflow: hidden;
+  top: 2px;
+  left: 4px;
+  border-radius: 10px;
+}
+
+/* project6 mockup Tablet */
+#project6 .mockup3 {
+  display: inline-block;
+  width: 401px;
+  height: 280px;
+  position: absolute;
+  top: 397px;
+  right: 489px;
+}
+
+#project6 .mockup3 .tablet {
+  position: absolute;
+  width: 100%;
+}
+
+#project6 .mockup3 a.hidden {
+  display: block;
+  width: 93%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 14px;
+  left: 13.5px;
 }
 
 /* Project6 Scroll Animation */
+
+#project .right {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(200px) scaleY(0);
+  transform-origin: 0 0;
+  transition: all 2s 0.4s cubic-bezier(0, 0.66, 0.38, 1.01);
+  width: 100%;
+}
+
+#project .right.in {
+  opacity: 1;
+  transform: translateY(0px) scaleY(1);
+}
 
 #project6 .project_info * {
   opacity: 0;

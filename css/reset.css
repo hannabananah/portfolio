@@ -90,7 +90,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 /* HTML5 display-role reset for older browsers */
@@ -114,13 +114,13 @@ section {
 }
 body {
   margin-left: -16px;
-	padding: 0;
+  padding: 0;
   line-height: 1;
   font-family: "Roboto", "맑은고딕", sans-serif;
   font-weight: 300;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
-	scrollbar-width: none; /* for Firefox */
-	overflow-y: scroll;
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
 }
 menu,
 ol,
@@ -237,22 +237,21 @@ input {
   width: 100%;
   height: 100%;
 }
-.container{
+.container {
   max-width: 1400px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
-.tohide{
+.tohide {
   display: block;
   text-indent: -999999px;
 }
 
-
 /* scrollbar */
 
 body::-webkit-scrollbar {
-	display: none; /* for Chrome, Safari, and Opera */
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 .scroll_progress_container {
@@ -262,21 +261,21 @@ body::-webkit-scrollbar {
   height: 100%;
   background: #fff;
   border-radius: 2px;
-	margin: auto;
+  margin: auto;
 }
 .scroll_progress_bar {
-	width: 15px;
-	background: linear-gradient(#f2f0ff,#afa5f3, #8e7dff,#5a2fc2);
-	border-radius: 5px;
+  width: 15px;
+  background: linear-gradient(#f2f0ff, #afa5f3, #8e7dff, #5a2fc2);
+  border-radius: 5px;
 }
 
 .scroll_progress_bar:before {
-	height: 1%;
+  height: 1%;
 }
 
 .glow {
-	-webkit-box-shadow: 0px 0px 20px 10px rgb(90 47 194 / 50%);
-	-moz-box-shadow: 0px 0px 20px 10px rgb(90 47 194 / 50%);
+  -webkit-box-shadow: 0px 0px 20px 10px rgb(90 47 194 / 50%);
+  -moz-box-shadow: 0px 0px 20px 10px rgb(90 47 194 / 50%);
   box-shadow: 0px 0px 20px 10px rgb(90 47 194 / 50%);
-  background: linear-gradient(#fff,#ffc6dc,#ed4385);
+  background: linear-gradient(#fff, #ffc6dc, #ed4385);
 }

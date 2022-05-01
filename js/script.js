@@ -52,10 +52,11 @@ $(window).on("scroll", function () {
         .siblings()
         .removeClass("active");
     } else if (scrollTop >= sections.eq(4).offset().top - speed) {
-      sections.eq(4).find(".project3_left").addClass("in");
+      sections.eq(4).find(".right").addClass("in");
       sections.eq(4).find("span").addClass("show");
-	  sections.eq(4).find(".img_box").addClass("show");
+      sections.eq(4).find(".img_box").addClass("show");
       sections.eq(4).find("img.logo").addClass("show");
+      sections.eq(4).find("a").addClass("show");
     }
   });
   sections.each(function (i, o) {
