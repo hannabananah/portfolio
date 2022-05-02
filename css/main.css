@@ -31,6 +31,65 @@
   animation: fadein 2.5s ease-out alternate both;
   animation-delay: 0.5s;
 }
+#main .main_link {
+  position: relative;
+  top: 80%;
+  left: 65%;
+  width: 250px;
+}
+#main .main_link p{
+  line-height: 28px;
+}
+#main .trail {
+  position: relative;
+}
+#main .trail::after {
+  content: "";
+  position: absolute;
+  background: currentColor;
+  pointer-events: none;
+  color: #582faa;
+}
+
+#main .trail-right {
+  font-size: 13.5px;
+  font-family: "Noto Sans KR", "맑은고딕", sans-serif;
+  color: #555;
+}
+#main .trail-right:after {
+  left: 100%;
+  margin-left: 1em;
+  height: 1px;
+  width: 6em;
+  top: 50%;
+}
+
+@keyframes trail-animation {
+  0% {
+    transform-origin: right;
+    transform: scaleX(1);
+  }
+  50% {
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+  50.01% {
+    transform-origin: left;
+  }
+  100% {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+}
+#main .trail-right.trail-animation:after {
+  -webkit-animation: trail-animation 1s infinite;
+  animation: trail-animation 1s infinite;
+}
+#main .trail-right.trail-animation-hover:hover:after {
+  -webkit-animation: trail-animation 1s infinite;
+  animation: trail-animation 1s infinite;
+}
+
 #main .profile {
   position: absolute;
   top: 354px;
@@ -237,7 +296,7 @@
   z-index: -1;
   width: 0%;
   height: 40%;
-  background: #e9c400;
+  background: #ed4385;
   transition: width 0.5s cubic-bezier(0.24, 0.77, 0.32, 0.95);
 }
 #main .title_mask:hover .mask2 {
@@ -400,6 +459,7 @@
   color: #969696;
   letter-spacing: -0.8px;
   padding: 1.5rem 0;
+  line-height: 20px;
 }
 #project .language {
   font-family: "Eulyoo-R", "맑은 고딕", sans-serif;
@@ -411,11 +471,17 @@
 #project .img_box {
   width: 100%;
   height: 40px;
+  padding-bottom: 15px;
 }
 #project .img_box img.logo1 {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+}
+#project3 .img_box img.logo1:first-child,#project5 .img_box img.logo1:first-child {
+  width: 30px;
+  height: 30px;
+  margin-right: 0px;
 }
 #project .img_box img.logo2 {
   width: 60px;
@@ -423,11 +489,13 @@
   position: relative;
   top: 5px;
 }
-#project .epilog a{
+#project .epilog{
+  line-height: 20px;
+}
+#project .epilog a {
   font-family: "Noto Sans KR", "맑은고딕", sans-serif;
   font-size: 14px;
-  color: #5722cd;
-  padding-top: 2rem;
+  color: #582faa;
 }
 /* Project1 Scroll Animation */
 
@@ -594,11 +662,30 @@
   height: 518px;
   position: absolute;
   top: 0;
-  left: 370px;
+  left: 405px;
   overflow: hidden;
   background: url(../images/mockupphone.png) no-repeat;
   background-size: 100% 100%;
 }
+#project3 .mockup2:after {
+  content: '';
+  position: absolute;
+  top: 68%;
+  left: 68%;
+  background: url(../images/cursor.svg) no-repeat center;
+  width: 50px;
+  height: 50px;
+  animation: mouse 0.6s alternate forwards infinite;
+  transform-origin: 50% 100%;
+}
+@keyframes mouse{
+  from{
+    transform: scale(1.2);
+  }
+  to{
+    transform: scale(1) rotate(10deg);
+  }
+} 
 
 .crop {
   position: relative;
@@ -1051,10 +1138,17 @@ iframe {
   padding: 12rem 0 0;
   text-align: center;
 }
+#contactme h2{
+  padding-bottom: 1rem;
+}
 #contactme ul li {
   line-height: 1.5rem;
 }
 #contactme span {
   position: relative;
   top: 5px;
+}
+#contactme .contact_btns{
+  padding-top: 10px;
+  font-family: "Noto Sans KR", "맑은고딕", sans-serif;
 }
