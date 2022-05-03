@@ -117,8 +117,6 @@ $(".hidden").hover(
     img.stop().animate({ top: 0 }, 3000);
   }
 );
-//background Logo scroll event
-
 
 // copy email
 function email() {
