@@ -69,13 +69,13 @@
   font-family: "Noto Sans KR", "맑은고딕", sans-serif;
   font-size: 16px;
   letter-spacing: -0.5px;
-  color: #060606;
+  color: #666;
 }
 #aboutme .skill_area p.title {
   font-family: "Noto Sans KR", "맑은고딕", sans-serif;
   font-size: 21px;
   line-height: 32px;
-  color: #060606;
+  color: #333;
   vertical-align: middle;
   text-align: left;
 }
@@ -84,7 +84,7 @@
   font-size: 17px;
   line-height: 27px;
   letter-spacing: -1px;
-  color: #060606;
+  color: #666;
   vertical-align: middle;
   text-align: left;
 }
@@ -93,34 +93,10 @@
   font-size: 15px;
   color: #333;
 }
-.font_projecthead {
-  font-family: "DM Serif Display", "맑은고딕", sans-serif;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 38.4px;
-  letter-spacing: 25%;
-  color: #060606;
-}
-.font_projectdetail {
-  font-family: "roboto", "맑은고딕", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 25%;
-  color: #333;
-}
-.font_projectview {
-  font-family: "roboto", "맑은고딕", sans-serif;
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 13.2px;
-  letter-spacing: 105%;
-  color: #5524c4;
-}
 .font_contactme {
   font-family: "DM Serif Display", "맑은고딕", sans-serif;
   font-weight: bold;
   font-size: 45px;
   line-height: 54px;
-  letter-spacing: -25%;
+  color: #333;
 }

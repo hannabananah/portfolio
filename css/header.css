@@ -32,14 +32,19 @@
   height: 50px;
 }
 #header h1 {
-  background: url(#) no-repeat left center;
+  position: relative;
+  top: 3%;
+  left: 14%;
+}
+#header h1 a {
+  background: url(../images/Logo.gif) no-repeat left center;
   background-size: contain;
   width: 80px;
   height: 80px;
 }
 nav .gnb {
   display: flex;
-  padding:25px 0 0;
+  padding: 25px 0 0;
 }
 
 nav li {
@@ -94,27 +99,27 @@ ul li a:after {
 /* gnb */
 .gnb.pos-fixed {
   position: relative;
-  top: 280px;
-  left: 206px;
+  top: 220px;
+  left: 205px;
   display: list-item;
-  animation: fadeInDown .5s ease-out forwards;
+  animation: fadeInDown 0.5s ease-out forwards;
 }
 @keyframes fadeInDown {
-   from {
-   opacity:0;
-   transform:translate3d(0,-100px,0);
-   -webkit-transform:translate3d(0,-100px,0);
-   }
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100px, 0);
+    -webkit-transform: translate3d(0, -100px, 0);
+  }
 
-   to {
-   opacity:1;
-   transform:translate3d(0,0,0);
-   -webkit-transform:translate3d(0,0,0);
-   -webkit-font-smoothing:antialiased;
-   }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+  }
 }
 .gnb.pos-fixed a {
-  color:#060606;
+  color: #666;
   margin-bottom: 15px;
 }
 .gnb.pos-fixed a:after {

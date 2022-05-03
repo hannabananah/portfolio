@@ -179,10 +179,10 @@ button {
 }
 a {
   text-decoration: none;
-  color: #555;
+  color: #666;
 }
 a:link {
-  color: #555;
+  color: #666;
   text-decoration: none;
 }
 img {
@@ -231,7 +231,7 @@ input {
   text-transform: capitalize;
 }
 .upper {
-  text-decoration: uppercase;
+  text-transform: uppercase;
 }
 .section {
   width: 100%;
@@ -247,7 +247,9 @@ input {
   display: block;
   text-indent: -999999px;
 }
-
+.indent{
+  text-indent: 7px;
+}
 /* scrollbar */
 
 body::-webkit-scrollbar {
