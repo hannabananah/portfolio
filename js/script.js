@@ -1,7 +1,7 @@
 const topmenu = $("nav ul.gnb>li");
 const sections = $(".section");
 const speed = 500;
-//버튼클릭시 이동
+//click button and move
 topmenu.click(function (e) {
   e.preventDefault();
   let target = $(this);
@@ -104,7 +104,7 @@ $(window).on("scroll", function () {
     }
   });
 });
-// 목업스크롤이벤트
+// project  screen scroll event
 $(".hidden").hover(
   function () {
     let ah = $(this).innerHeight();
@@ -117,8 +117,10 @@ $(".hidden").hover(
     img.stop().animate({ top: 0 }, 3000);
   }
 );
+//background Logo scroll event
 
-// 이메일 복사
+
+// copy email
 function email() {
   var $emailBtn = $("#contactme .address button");
 

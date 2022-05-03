@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #aboutme .animation {
-    transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .progress_bar {
@@ -20,9 +20,9 @@
   bottom: 0;
   height: 3px;
   border-radius: 5px;
-  background:rgba(90, 47, 194,0.6);
+  background: rgba(90, 47, 194, 0.6);
 }
-.progress_bar .rate {
+#aboutme .skill .rate {
   width: 55px;
   text-align: center;
   height: 33px;
@@ -34,8 +34,17 @@
   font-size: 1.2em;
   color: #ed4385;
 }
+#aboutme .skill:first-child .rate {
+  margin-left: 10px;
+}
+#aboutme .skill:nth-child(2) .rate {
+  margin-left: 60px;
+}
+#aboutme .skill:last-child .rate {
+  margin-left: 39px;
+}
 .progress_bar .rate:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 22px;
   left: 17px;

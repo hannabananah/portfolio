@@ -138,7 +138,7 @@
   height: 63px;
 }
 #aboutme .profile_detail_area p {
-  padding-bottom: 3.5rem;
+  padding-bottom: 3.7rem;
 }
 #aboutme .detail_box_top {
   width: 100%;
@@ -238,17 +238,20 @@
 }
 #project h2 {
   background: url(../images/project.png) no-repeat center center;
-  background-size: contain;
+  background-size: 60%;
   width: 1400px;
-  position: absolute;
   z-index: 0;
-  height: 425px;
+  height: auto;
+  margin: 0 auto;
+  background-attachment: fixed;
+  background-position: 45% 45%;
 }
 #project .section .mask_left {
-  text-align: left;
+  width: 155px;
 }
 #project .section .mask_right {
   text-align: right;
+  width: 426px;
 }
 #project .left_area1 {
   position: relative;
@@ -257,7 +260,6 @@
 }
 #project .right_area1 {
   width: 40%;
-  position: relative;
   padding-top: 150px;
   text-align: right;
 }
@@ -278,7 +280,9 @@
   position: relative;
   display: inline-block;
   font-family: "DM Serif Display";
-  height: 45px;
+  top: 21px;
+  height: 46px;
+  width: 155px;
   font-size: 42px;
   line-height: 40.8px;
   margin-bottom: 2rem;
@@ -550,7 +554,8 @@
   width: 842px;
   height: 455px;
   position: absolute;
-  top: 170px;
+  top: 210px;
+  left: -2%;
 }
 
 #project2 .mockup .computer {
@@ -738,7 +743,8 @@ iframe {
   width: 842px;
   height: 455px;
   position: absolute;
-  top: 170px;
+  top: 210px;
+  left: -2%;
 }
 
 #project4 .mockup .computer {
@@ -968,7 +974,8 @@ iframe {
   width: 842px;
   height: 455px;
   position: absolute;
-  top: 170px;
+  top: 210px;
+  left: -2%;
 }
 
 #project6 .mockup .computer {
@@ -1157,10 +1164,10 @@ iframe {
 #contactme ul li {
   line-height: 1.5rem;
 }
-#contactme button span{
+#contactme button span {
   color: #555;
 }
-#contactme strong{
+#contactme strong {
   color: #555;
 }
 #contactme span {
