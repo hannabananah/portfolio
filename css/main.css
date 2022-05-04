@@ -242,7 +242,7 @@
   height: 30rem;
   padding-top: 100px;
 }
- *//* mouseCont */
+*//* mouseCont */
 #aboutme .mouseCont {
   position: absolute;
   display: flex;
@@ -263,23 +263,23 @@
 }
 
 /* stage */
-#aboutme .main_area{
-    position: relative;
+#aboutme .main_area {
+  position: relative;
 }
 
-#aboutme .sub_area{
-    position: absolute;
-    width: 700px;
+#aboutme .sub_area {
+  position: absolute;
+  width: 700px;
 }
-#aboutme .main_area img{
-    position: absolute;
-    width: 100%;
-    top: 90px;
-    left: 50%;
+#aboutme .main_area img {
+  position: absolute;
+  width: 100%;
+  top: 90px;
+  left: 50%;
 }
-#aboutme .main_area img.obj1{
-    z-index: -1;
-    width: 100%;
+#aboutme .main_area img.obj1 {
+  z-index: -1;
+  width: 100%;
 }
 #aboutme .detail_box_skill_left {
   width: 27%;
@@ -377,7 +377,7 @@
   width: 60%;
 }
 
-/* project&banner title effect */
+/* project title effect */
 #main .title_mask {
   overflow: hidden;
   position: relative;
@@ -1177,23 +1177,30 @@ iframe {
 
 /* banner */
 #banner.section {
-  height: 30vh;
-  margin: 6rem auto;
-  padding: 6rem 0 10rem 0;
+  height: 25vh;
+  margin: 5rem auto;
+  padding: 0rem 0 14rem 0;
 }
-#banner h2 {
-  background: url(../images/banners.png) no-repeat center center;
-  background-size: contain;
-  width: 1400px;
-  height: 450px;
+
+.banner_letter_area {
   position: absolute;
-  z-index: -1;
+  width: 1400px;
+  height: 35rem;
+  overflow: hidden;
+}
+.banner_letter {
+  background: url(../images/banners.png) no-repeat center center;
+  width: 100%;
+  height: 30rem;
+  position: relative;
+  background-size: 80%;
+  bottom: 5rem;
 }
 #banner .banner_area {
   position: relative;
   width: 1400px;
   margin: 0 auto;
-  top: 96px;
+  top: 300px;
 }
 #banner .slide-content {
   margin: 8px;
@@ -1257,8 +1264,8 @@ iframe {
 #contactme {
   background: url(../images/footer.png) top;
   background-size: cover;
-  height: 26vh;
-  padding: 12rem 0 0;
+  height: 25vh;
+  padding: 10rem 0 0;
   text-align: center;
 }
 #contactme h2 {

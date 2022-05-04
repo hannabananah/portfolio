@@ -132,6 +132,39 @@ $(".hidden").hover(
   }
 );
 
+//banner background effect
+let banner_speed = 300;
+let amount = 30;
+
+let scroll = 0;
+let smooth = 0;
+let diff = 0;
+
+$(document).on('scroll', event => {
+  scroll = $(window).scrollTop();
+});
+
+let banners = null;
+let delta = 0;
+
+const animate = t => {
+  if (banners)
+  delta = t - banners;
+  smooth += (scroll - smooth) * delta / banner_speed;
+  diff = scroll - smooth;
+
+  let translateCenter = diff * 5 / amount;
+  let translateLetter = diff * 10 / amount;
+
+  $('.banner_letter_area').css('transform', 'translateY(' + translateCenter + 'px)');
+  $('.banner_letter').css('transform', 'translateY(' + translateLetter + 'px)');
+
+  banners = t;
+  requestAnimationFrame(animate);
+};
+
+requestAnimationFrame(animate);
+
 // copy email
 function email() {
   var $emailBtn = $("#contactme .address button");
