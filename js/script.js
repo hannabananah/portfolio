@@ -10,6 +10,20 @@ topmenu.click(function (e) {
   let offset = section.offset().top;
   $("html,body").animate({ scrollTop: offset }, 100, "easeOutCirc");
 });
+//mouse effect(skills)
+$(window).on({
+  mousemove: function (e) {
+        gsap.to(".cursor", {duration: .2, left: e.pageX -10, top: e.pageY -10})
+  
+        let pageX = e.pageX
+        let pageY = e.pageY
+
+        let standardX = $(window).width() / 2 - pageX
+        let standardY = $(window).height() / 2 - pageY
+
+        $(".sub_area .obj1").attr({ style: "transform : translate(" + standardX / 60 + "px," + standardY / 40 + "px)" })
+    },
+})
 
 //스크롤이벤트
 $(window).on("scroll", function () {

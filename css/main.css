@@ -242,13 +242,44 @@
   height: 30rem;
   padding-top: 100px;
 }
-#aboutme .skill_area h2 {
-  background: url(../images/skills.png) no-repeat center center;
-  background-size: contain;
-  width: 1400px;
-  height: 325px;
+ *//* mouseCont */
+#aboutme .mouseCont {
   position: absolute;
-  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1400px;
+  height: inherit;
+  cursor: default;
+}
+#aboutme .cursor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* stage */
+#aboutme .main_area{
+    position: relative;
+}
+
+#aboutme .sub_area{
+    position: absolute;
+    width: 700px;
+}
+#aboutme .main_area img{
+    position: absolute;
+    width: 100%;
+    top: 90px;
+    left: 50%;
+}
+#aboutme .main_area img.obj1{
+    z-index: -1;
+    width: 100%;
 }
 #aboutme .detail_box_skill_left {
   width: 27%;
